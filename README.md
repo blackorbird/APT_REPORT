@@ -35,3 +35,8 @@ https://blog.alyac.co.kr/1767
 ▶ group123, Flash Player Zero-Day (CVE-2018-4878) Attack Attention
 https://blog.alyac.co.kr/1521
 (Feb 02, 2018)
+
+#tick
+
+▶ tick group new campaign, attack north korean and japan
+https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=28186
