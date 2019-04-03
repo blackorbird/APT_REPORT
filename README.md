@@ -63,6 +63,10 @@ https://blog.alyac.co.kr/2234
 ▶ Kimsuky Organization, Watering Hole Started "Operation Low Kick"(March 21, 2019)
 https://blog.alyac.co.kr/2209
 
+### Oceanlotus
+▶ OceanLotus Steganography Malware Analysis White Paper (April 2 , 2019)
+https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
+
 ### tick
 
 ▶ tick group new campaign, attack north korean and japan
