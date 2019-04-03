@@ -53,6 +53,14 @@ https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-s
 ▶ Malicious code installed with coin purse program(Alibaba) (March 15, 2019)
 https://asec.ahnlab.com/1209
 
+### kimsuky
+
+▶ Kimsuky Organization, Operation Stealth Power Silence Operation (April 3 , 2019)
+https://blog.alyac.co.kr/2234
+
+▶ Kimsuky Organization, Watering Hole Started "Operation Low Kick"(March 21, 2019)
+https://blog.alyac.co.kr/2209
+
 ### tick
 
 ▶ tick group new campaign, attack north korean and japan
