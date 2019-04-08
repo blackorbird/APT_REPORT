@@ -1,3 +1,5 @@
+RELATED REPORT
+
 https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-full.pdf
 https://www.welivesecurity.com/2017/05/09/sednit-adds-two-zero-day-exploits-using-trumps-attack-syria-decoy/
 https://www.emanueledelucia.net/apt28-targeting-military-institutions/
