@@ -90,6 +90,6 @@ https://www.tagesschau.de/inland/hackerangriff-bayer-101.html
 
 ### londonblue (Nigeria)
 PDF is in the folder
-▶ Evolving Tactics: London Blue Starts Spoofing Target Domains
+▶ Evolving Tactics: London Blue Starts Spoofing Target Domains (April 4 , 2019)
 https://www.agari.com/email-security-blog/london-blue-evolving-tactics/
 
