@@ -1,0 +1,20 @@
+IOC：549726b8bfb1919a343ac764d48fdc81SedUploader payload, compiled on 2018-11-21ebdc6098c733b23e99daa60e55cf858bSedUploader payload, compiled on 2018-12-0770213367847c201f65fed99dbe7545d2SedUploader payload, compiled on 2018-12-07c4601c1aa03d83ec11333d7400a2bbafSedUploader payload, compiled on 2019-01-28a13c864980159cd9bdc94074b2389ddaZebrocy downloader type 1 (.NET), compiled on 2018-11-13f05a7cc3656c9467d38d54e037c24391Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-067e67122d3a052e4755b02965e2e56a2eZebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-15ed80d716ddea1dca2ef4c464a8cb5810Zebrocy downloader type 2 (Delphi), compiled on 2018-11-13ea5722ed66bd75871e24f7f88c5133aaZebrocy downloader type 1 (Delphi), VT 1st seen on 2018-10-18fdbfceec5b3d2e855feb036c4e96e9aaZebrocy downloader type 2 (Delphi), compiled on 2018-10-23f4cab3a393462a57639faa978a75d10aZebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-165415b299f969c62174a624d236a56f42Zebrocy downloader type 2 (Delphi), compiled on 2018-11-13e57a401e8f0943b703d975692fcfc0e8Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-28a4d63973c0e60936f72aed3d391fd461Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-291fe6af243760ca287f80eafbb98ba1b0Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-29 3eaf97b9c6b44f0447f2bd1c7acb8c96Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-12-103e713a838a68259ae2f9ef2eed05a761Zebrocy downloader, VT 1st seen on 2019-01-07f1aeaf72995b12d5edd3971ccbc38facZebrocy downloader, VT 1st seen on 2019-01-24b68434af08360e6cf7a51d623195caa1
+Zebrocy downloader, VT 1st seen on 2019-01-24 896ed83884181517a002d2cf73548448
+Zebrocy downloader, VT 1st seen on 2019-02-02 53ae587757eb9b4afa4c4ca9f238ade6
+Zebrocy downloader, VT 1st seen on 2019-02-04 268426b91d3f455ec7ef4558c4a4dfd1
+Zebrocy downloader type 1 (.NET), compiled on 2018-10-23 2b16b0f552ea6973fce06862c91ee8a9
+Zebrocy downloader type 1 (.NET), compiled on 2018-10-25 9a7d82ba55216defc2d4131b6c453f02
+Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-24 02c46f30f4c68a442cf7e13bebe8d3f8
+Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-11-30 d6a60c6455f3937735ce2df82ad83627
+Zebrocy downloader type 1 (Delphi), VT 1st seen on 2018-12-019ae5e57d8c40f72a508475f19c0a42f6
+Zebrocy downloader type 1 (Delphi), VT 1st seen on 2019-01-24 333d2b9e99b36fb42f9e79a2833fad9c
+Zebrocy downloader type 1 (Go), VT 1st seen on 2018-12-20 602d2901d55c2720f955503456ac2f68
+Zebrocy downloader type 1 (Go), VT 1st seen on 2018-12-04 3773150aeee03783a6da0820a8feb752
+Zebrocy downloader type 2 (Go), VT 1st seen on 2018-12-04 
+
+SedUploader C2：
+beatguitar.com
+photopoststories.com
+wmdmediacodecs.com
+
+Zebrocy downloader:hxxp://109.248.148.42/agr-enum/progress-inform/cube.phphxxp://188.241.58.170/local/s3/filters.phphxxps://91.219.238.118/zx-system/core/main-config.phphxxp://185.203.118.198/en_action_device/center_correct_customer/drivers-i7-x86.phphxxps://109.248.148.22/orders/create/new.phpZebrocy downloader C2hxxp://185.217.92.119/db-module/version_1594/main.phphxxp://93.113.131.155/Verifica-El-Lanzamiento/Ayuda-Del-Sistema/obtenerId.phpZebrocy downloader C2hxxp://45.124.132.127/action-center/centerforserviceandaction/service-and-action.phphxxp://45.124.132.127/company-device-support/values/correlate-sec.phpZebrocy downloader C2hxxp://86.106.131.177/SupportA91i/syshelpA774i/viewsupp.phphxxp://89.37.226.148/technet-support/library/online-service-description.phphxxp://145.249.105.165/resource-store/stockroom-center-service/check.phphxxp://89.37.226.148/technet-support/library/online-service-description.phphxxp://89.37.226.123/advance/portable_version/service.phphxxps://190.97.167.186/pkg/image/do.php
