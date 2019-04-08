@@ -87,3 +87,9 @@ https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&m
 ▶ bayer-says-has-detected-contained-cyber-attack (April 5 , 2019)
 https://www.reuters.com/article/us-bayer-cyber/bayer-says-has-detected-contained-cyber-attack-idUSKCN1RG0NN
 https://www.tagesschau.de/inland/hackerangriff-bayer-101.html
+
+### londonblue (Nigeria)
+PDF is in the folder
+▶ Evolving Tactics: London Blue Starts Spoofing Target Domains
+https://www.agari.com/email-security-blog/london-blue-evolving-tactics/
+
