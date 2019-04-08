@@ -72,6 +72,10 @@ https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveragi
 ▶ CB TAU Threat Intelligence Notification: Hunting APT28 Downloaders  (April 5 , 2019)
 https://www.carbonblack.com/2019/04/05/cb-threat-intelligence-notification-hunting-apt28-downloaders/
 
+### Fin6
+▶ Pick-Six: Intercepting a FIN6 Intrusion, an Actor Recently Tied to Ryuk and LockerGoga Ransomware(April 5 , 2019)
+https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin6-intrusion.html
+
 ### tick
 
 ▶ tick group new campaign, attack north korean and japan
