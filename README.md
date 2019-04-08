@@ -81,3 +81,9 @@ https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin
 ▶ tick group new campaign, attack north korean and japan
 https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=28186
 (April 1 , 2019)
+
+### Winnti
+
+▶ bayer-says-has-detected-contained-cyber-attack (April 5 , 2019)
+https://www.reuters.com/article/us-bayer-cyber/bayer-says-has-detected-contained-cyber-attack-idUSKCN1RG0NN
+https://www.tagesschau.de/inland/hackerangriff-bayer-101.html
