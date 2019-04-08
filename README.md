@@ -67,6 +67,11 @@ https://blog.alyac.co.kr/2209
 ▶ OceanLotus Steganography Malware Analysis White Paper (April 2 , 2019)
 https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
 
+
+### APT28
+▶ CB TAU Threat Intelligence Notification: Hunting APT28 Downloaders  (April 5 , 2019)
+https://www.carbonblack.com/2019/04/05/cb-threat-intelligence-notification-hunting-apt28-downloaders/
+
 ### tick
 
 ▶ tick group new campaign, attack north korean and japan
