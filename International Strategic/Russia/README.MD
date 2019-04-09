@@ -1,9 +1,9 @@
-###Meddling in Elections - The Case of Russian Attackers
+### Meddling in Elections - The Case of Russian Attackers
 
-##RELATED
+## RELATED
 https://blog.cyr3con.ai/meddling-in-elections-the-case-of-russian-attackers
 
-Event
+###Event
 
 April 2015
 
