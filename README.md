@@ -76,6 +76,8 @@ https://blog.alyac.co.kr/2209
 ▶ OceanLotus Steganography Malware Analysis White Paper (April 2 , 2019)
 https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
 
+▶OceanLotus: macOS malware update(April 9 , 2019)
+https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/
 
 ### APT28
 ▶ CB TAU Threat Intelligence Notification: Hunting APT28 Downloaders  (April 5 , 2019)
