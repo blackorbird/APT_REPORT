@@ -1,0 +1,15 @@
+related report :
+https://www.securityartwork.es/2019/04/04/ukraine-election-2019-polls-maldoc-analysis/
+
+Ukraine_election_2019_polls.doc	
+8a35b6ecdf43f42dbf1e77235d6017faa70d9c68930bdc891d984a89d895c1e7
+
+C2：functiondiscovery[.]net:8443/admin/get.php
+185.216.35[.]182
+
+related doc
+
+download.doc
+8cccdce85beca7b7dc805a7f048fcd1bc8f7614dd7e13c2986a9fa5dfbbbbdf9
+
+C2:http://beatguitar.com/
