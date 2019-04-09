@@ -1,0 +1,28 @@
+OceanLotus : macOS backdoor update
+For a description of OceanLotus' latest macOS update please see the article OceanLotus article.
+https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/
+
+Hash
+SHA1	ESET Detection name
+E615632C9998E4D3E5ACD8851864ED09B02C77D2
+
+OSX/OceanLotus.D
+
+File paths
+File path
+~/Library/SmartCardsServices/Technology/PlugIns/drivers/snippets.ecgML
+
+/Library/Storage/File System/HFS/25cf5d02-e50b-4288-870a-528d56c3cf6e/pivtoken.appex
+
+/tmp/store
+
+Network
+Domains
+daff.faybilodeau.com
+
+sarc.onteagleroad.com
+
+au.charlineopkesston.com
+
+URI
+/dp/B074WC4NHW/ref=gbps_img_m-9_62c3_750e6b35
