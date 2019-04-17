@@ -66,6 +66,9 @@ https://blog.alyac.co.kr/1640
 
 ### kimsuky
 
+▶ Analysis of "Smoke Screen" in APT campaign aimed at Korea and America
+https://blog.alyac.co.kr/2243
+
 ▶ Kimsuky Organization, Operation Stealth Power Silence Operation (April 3 , 2019)
 https://blog.alyac.co.kr/2234
 
