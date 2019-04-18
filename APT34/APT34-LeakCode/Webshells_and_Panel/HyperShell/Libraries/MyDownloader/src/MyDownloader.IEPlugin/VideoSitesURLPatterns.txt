@@ -1,5 +1,0 @@
-(?:[Bb][Rr][Ee][Aa][Kk]\.[Cc][Oo][Mm]/)(\w[\w|-]*)
-(?:[Vv][Ii][Dd][Ee][Oo]\.[Gg][Oo][Oo][Gg][Ll][Ee]\.[Cc][Oo][Mm]/videoplay\?docid=)-?(\w[\w|-]*)
-(?:[Mm][Ee][Ta][Aa][Cc][Aa][Ff][Ee]\.[Cc][Oo][Mm]/watch/)(\w[\w|-]*)/(\w[\w|-]*)
-(?:[Mm][Ee][Dd][Ii][Aa]\.[Pp][Uu][Tt][Ff][Ii][Ll][Ee]\.[Cc][Oo][Mm]/)(\w[\w|-]*)
-(?:[Yy][Oo][Uu][Tt][Uu][Bb][Ee]\.[Cc][Oo][Mm]/watch\?v=)(\w[\w|-]*)

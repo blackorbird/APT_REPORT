@@ -1,5 +1,0 @@
-To install MyDownloader toolbar:
-
-1) Edit 'register.reg' setting the correct MyDownloader filename 
-2) Run register.reg.
-3) Run register.bat inside Visual Studio command prompt.
