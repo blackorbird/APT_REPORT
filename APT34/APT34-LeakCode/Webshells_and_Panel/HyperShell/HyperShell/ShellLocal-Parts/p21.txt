@@ -1,0 +1,39 @@
+void upload(HttpPostedFile uploadFile,string uploadPath)
+    {
+        string ret="Error : -";
+        try {
+            if (System.IO.Path.IsPathRooted(uploadPath))
+            {
+                string FileName = System.IO.Path.GetFileName(uploadFile.FileName);
+                string FilePath = uploadPath.TrimEnd('\\') + "\\";
+                if (string.IsNullOrEmpty(System.IO.Path.GetExtension(uploadPath)))
+                {
+                    if (!System.IO.Directory.Exists(uploadPath))
+                    {
+                        if (!string.IsNullOrEmpty(System.IO.Path.GetFileName(uploadPath)))
+                        {
+                            FileName = System.IO.Path.GetFileName(uploadPath);
+                            FilePath = System.IO.Path.GetDirectoryName(uploadPath) + "\\";
+                        }
+                    }
+                }
+                else
+                {
+                    FileName = System.IO.Path.GetFileName(uploadPath);
+                    FilePath = System.IO.Path.GetDirectoryName(uploadPath) + "\\";
+                }
+
+                if (!System.IO.Directory.Exists(FilePath))
+                    System.IO.Directory.CreateDirectory(FilePath);
+
+                uploadFile.SaveAs(FilePath + FileName);
+                ret ="File uploaded successfully : "+ FilePath + FileName;
+            }
+            else
+                ret="Error : The path is not current format \""+uploadPath+"\"";
+
+        } catch(Exception ex){
+            ret ="Error : "+ex.Message;
+        }
+        response(ret);
+    }

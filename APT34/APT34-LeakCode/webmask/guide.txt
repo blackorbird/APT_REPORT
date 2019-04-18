@@ -1,0 +1,150 @@
+apt-get update
+apt-get install vim
+apt-get install screen
+
+----Solution 1
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+rm -f get-pip.py
+pip install dnslib
+<copy dns_redir>
+cd dns_redir
+<edit config.json>
+screen 
+python dnsd.py config.json <original nameserver>
+<exit screen (Ctrl+A -> Ctrl_D)>
+
+----Solution2 (use this)
+apt-get install curl
+apt-get install sudo
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+npm install -g forever
+npm install -g forever-service
+<copy dns_redir>
+cd dns_redir
+npm install native-dns
+<edit dnsd.js>
+			var zone = 'tra.gov.ae';
+			var domainName = ['webmail.tra.gov.ae', 'dns.tra.gov.ae'];
+			var zone = 'tra.gov.ae';
+			var authorative = '195.229.237.52'; //must be ip
+			var responseIP = '185.162.235.106';
+			var server = dns.createServer();
+forever-service install dns-server --script dnsd.js --start
+
+**-----------------------------------------------ta inja
+<copy icap server script>
+ipcocd icap
+screen
+python icap.py
+<exit screen (Ctrl+A -> Ctrl_D)>
+
+cd /opt
+apt-get install openssl devscripts build-essential libssl-dev apache2 squid-langpack
+apt-get source squid3
+apt-get build-dep squid3
+cd squid3-3.4.8
+vim debian/rules
+	<insert below lines in DEB_CONFIGURE_EXTRA_FLAGS section>
+		--enable-ssl \
+		--enable-ssl-crtd \
+		--with-open-ssl="/etc/ssl/openssl.cnf" \
+debuild -us -uc
+cd ..
+dpkg -i *.deb
+apt-get install -f
+service apache2 stop
+service squid3 stop
+cd /etc/squid3/
+mv squid.conf squid.conf.bckp
+vim squid.conf
+	<insert below lines>
+		visible_hostname edge.<target-zone>
+
+		#http_port 80 accel defaultsite=<target-domain> no-vhost
+		#https_port 443 accel cert=/etc/letsencrypt/live/<target-domain>/fullchain.pem key=/etc/letsencrypt/live/<target-domain>/privkey.pem defaultsite=<target-domain> no-vhost
+
+		#cache_peer <original-target-ip> parent 80 0 no-query originserver name=webmask
+		#cache_peer <original-target-ip> parent 443 0 no-query originserver sslflags=DONT_VERIFY_PEER,DONT_VERIFY_DOMAIN login=PASS ssl front-end-https=on name=webmask
+
+		acl target_sites dstdomain <target-domain>
+		http_access allow target_sites
+		cache_peer_access webmask allow target_sites
+		cache_peer_access webmask deny all
+
+		icap_enable on
+		icap_persistent_connections off
+		adaptation_send_client_ip on
+		adaptation_masterx_shared_names X-Data
+
+		icap_service password_req reqmod_precache bypass=1 icap://127.0.0.1:1344/password
+		#icap_service password_resp respmod_precache bypass=1 icap://127.0.0.1:1344/password
+		icap_service cookie_req reqmod_precache bypass=1 icap://127.0.0.1:1344/cookie
+		#icap_service cookie_resp respmod_precache bypass=1 icap://127.0.0.1:1344/cookie
+		#icap_service inject_req reqmod_precache bypass=1 icap://127.0.0.1:1344/inject
+		icap_service inject_resp respmod_precache bypass=1 icap://127.0.0.1:1344/inject
+		icap_service headers_req reqmod_precache bypass=1 icap://127.0.0.1:1344/headers
+		#icap_service headers_resp respmod_precache bypass=1 icap://127.0.0.1:1344/headers
+		icap_service basic_req reqmod_precache bypass=1 icap://127.0.0.1:1344/basic
+		#icap_service basic_resp respmod_precache bypass=1 icap://127.0.0.1:1344/basic
+
+		adaptation_service_chain service_req password_req basic_req
+		#adaptation_service_chain service_resp 
+
+		adaptation_access service_req allow all
+		#adaptation_access service_resp allow all
+	<replace target-domain and original-target-ip by its values>
+	<uncomment http_port and https_port if you want>
+	<uncomment which cache_peer you want>
+	<add needed icap_services to adaptation_service_chain>
+
+<scan target server and find open ports>
+	nmap -vvv <original-target-ip>
+apt-get install haproxy
+cd /etc/haproxy/
+vim haproxy.cfg
+	<comment below lines>
+		mode    http
+		option  httplog
+	<insert below lines for all of open port>
+		frontend ft_<port>
+			bind :<port>
+			mode tcp
+			default_backend bk_<port>
+		backend bk_<port>
+			mode tcp
+			balance roundrobin
+			stick-table type ip size 200k expire 30m
+			stick on src
+			default-server inter 1s
+			server s1 <original-target-ip>:<port> check id 1
+<check no process listen on target ports>
+	netstat -nlp
+service haproxy restart
+
+---------------------------------------------
+
+<change target domain nameserver and wait the change apply>
+
+---------------------------------------------
+
+<if you want get valid certificate for squid>
+	vim /etc/apt/sources.list
+		<insert below lines>
+			deb http://ftp.debian.org/debian jessie-backports main
+			deb-src http://ftp.debian.org/debian jessie-backports main
+	apt-get update
+	apt-get install certbot -t jessie-backports
+	vim /etc/haproxy/haproxy.cfg
+		<comment sections related to port 443>
+	service haproxy restart
+	certbot certonly --standalone -n -m <recovery-email> --agree-tos -d <target-domain>
+	vim /etc/haproxy/haproxy.cfg
+		<uncomment sections related to port 443>
+	service haproxy restart
+
+vim /etc/haproxy/haproxy.cfg
+	<comment sections related to squid ports>
+service haproxy restart
+service squid3 start

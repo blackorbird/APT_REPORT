@@ -1,0 +1,6 @@
+var a = $('.objRight.objN');
+for(var i = 0; i<a.length;i++)
+{
+if(Number($(a[i]).text().split('.')[2]) < 115)
+$(a[i]).parent().find('.checkbox').eq(0).checkbox('uncheck');
+}

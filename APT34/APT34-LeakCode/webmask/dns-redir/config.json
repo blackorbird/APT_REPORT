@@ -1,0 +1,8 @@
+{
+	"overrides":{
+		"victim_domain": "127.0.0.1"
+	},
+	"zones":[
+		"victim_domain"
+	]
+}

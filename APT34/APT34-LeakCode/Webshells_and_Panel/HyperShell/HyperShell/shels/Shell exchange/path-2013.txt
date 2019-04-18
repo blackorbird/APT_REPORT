@@ -1,0 +1,8 @@
+
+C:\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\
+
+getidtokens.aspx
+OutlookDC.aspx
+
+
+w;9uTJ0Dpm8(+4\`0FwEjiFspa
