@@ -5,6 +5,10 @@ Interesting apt report collection
 
 ### Group123
 
+▶Group123, APT attack impersonating Unification Ministry, spread malicious code to Google Drive
+https://blog.alyac.co.kr/2268
+(April 22 , 2019)
+
 ▶ group123 APT organization, 'Operation High Expert'
 https://blog.alyac.co.kr/2226
 (April 2 , 2019)
@@ -121,7 +125,7 @@ https://www.agari.com/email-security-blog/london-blue-evolving-tactics/
 https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin6-intrusion.html
 
 ### Fin7
-▶ On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation （August 01, 2018）
+▶ On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation (August 01, 2018)
 https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html
 
 
