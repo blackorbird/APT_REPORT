@@ -2,10 +2,15 @@
 
 ## 20190423
 
-two relate phishing operation:
+two related phishing operation:
 
-Group123, APT attack impersonating Unification Ministry, spread malicious code to Google Drive https://blog.alyac.co.kr/2268 (April 22 , 2019)
-'group123' group 'survey on the total number of discovery of separated families in North and South' https://blog.alyac.co.kr/1767 (July 28, 2014)
+Group123, APT attack impersonating Unification Ministry, spread malicious code to Google Drive
+
+https://blog.alyac.co.kr/2268 (April 22 , 2019)
+
+'group123' group 'survey on the total number of discovery of separated families in North and South'
+
+https://blog.alyac.co.kr/1767 (July 28, 2014)
 
 email_93682646.html
 88107e3c785d3d30e5f6fc191622a157
