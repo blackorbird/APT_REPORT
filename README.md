@@ -119,3 +119,9 @@ https://www.agari.com/email-security-blog/london-blue-evolving-tactics/
 ### Fin6
 ▶ Pick-Six: Intercepting a FIN6 Intrusion, an Actor Recently Tied to Ryuk and LockerGoga Ransomware(April 5 , 2019)
 https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin6-intrusion.html
+
+### Fin7
+▶ On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation （August 01, 2018）
+https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html
+
+
