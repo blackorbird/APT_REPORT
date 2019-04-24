@@ -81,6 +81,13 @@ https://blog.alyac.co.kr/2234
 https://blog.alyac.co.kr/2209
 
 ### Oceanlotus
+
+▶ Oceanlotus in the first quarter of 2019 for the attack technology of China.
+https://mp.weixin.qq.com/s/xPsEXp2J5IE7wNSMEVC24A
+
+▶ Deobfuscating APT32 Flow Graphs with Cutter and Radare2 (April 24, 2019)
+https://research.checkpoint.com/deobfuscating-apt32-flow-graphs-with-cutter-and-radare2/
+
 ▶ OceanLotus Steganography Malware Analysis White Paper (April 2 , 2019)
 https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
 
