@@ -80,6 +80,11 @@ https://blog.alyac.co.kr/2234
 ▶ Kimsuky Organization, Watering Hole Started "Operation Low Kick"(March 21, 2019)
 https://blog.alyac.co.kr/2209
 
+### Jaku
+
+▶ SiliVaccine: Inside North Korea’s Anti-Virus (May 1, 2018)
+https://research.checkpoint.com/silivaccine-a-look-inside-north-koreas-anti-virus/
+
 ### Oceanlotus
 
 ▶ Oceanlotus in the first quarter of 2019 for the attack technology of China.(April 24, 2019)
@@ -97,6 +102,8 @@ https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/
 ### APT28
 ▶ CB TAU Threat Intelligence Notification: Hunting APT28 Downloaders  (April 5 , 2019)
 https://www.carbonblack.com/2019/04/05/cb-threat-intelligence-notification-hunting-apt28-downloaders/
+
+
 
 
 ### tick
