@@ -52,6 +52,9 @@ https://unit42.paloaltonetworks.com/unit42-freemilk-highly-targeted-spear-phishi
 
 ### baby related kimsuky
 
+▶BabyShark Malware Part Two – Attacks Continue Using KimJongRAT and PCRat (April 26, 2019)
+https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/
+
 ▶Operation Giant Baby, a giant threat (March 28, 2019)
 https://blog.alyac.co.kr/2223
 
@@ -66,6 +69,7 @@ https://blog.alyac.co.kr/1963
 
 ▶ Returned to Korea as Operation Baby Coin, APT attacker, overseas target in 2010 (Apr. 19, 2014)
 https://blog.alyac.co.kr/1640
+
 
 
 
