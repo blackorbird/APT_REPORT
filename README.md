@@ -52,6 +52,9 @@ https://unit42.paloaltonetworks.com/unit42-freemilk-highly-targeted-spear-phishi
 
 ### baby related kimsuky
 
+▶BabyShark Malware Part Two – Attacks Continue Using KimJongRAT and PCRat (April 26, 2019)
+https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/
+
 ▶Operation Giant Baby, a giant threat (March 28, 2019)
 https://blog.alyac.co.kr/2223
 
@@ -69,6 +72,7 @@ https://blog.alyac.co.kr/1640
 
 
 
+
 ### kimsuky
 
 ▶ Analysis of "Smoke Screen" in APT campaign aimed at Korea and America (April 17 , 2019)
@@ -80,7 +84,23 @@ https://blog.alyac.co.kr/2234
 ▶ Kimsuky Organization, Watering Hole Started "Operation Low Kick"(March 21, 2019)
 https://blog.alyac.co.kr/2209
 
+### Jaku
+
+▶ SiliVaccine: Inside North Korea’s Anti-Virus (May 1, 2018)
+https://research.checkpoint.com/silivaccine-a-look-inside-north-koreas-anti-virus/
+
+### Lazarus
+LAZARUS APT TARGETS MAC USERS WITH POISONED WORD DOCUMENT
+https://www.sentinelone.com/blog/lazarus-apt-targets-mac-users-poisoned-word-document/
+
 ### Oceanlotus
+
+▶ Oceanlotus in the first quarter of 2019 for the attack technology of China.(April 24, 2019)
+https://mp.weixin.qq.com/s/xPsEXp2J5IE7wNSMEVC24A
+
+▶ Deobfuscating APT32 Flow Graphs with Cutter and Radare2 (April 24, 2019)
+https://research.checkpoint.com/deobfuscating-apt32-flow-graphs-with-cutter-and-radare2/
+
 ▶ OceanLotus Steganography Malware Analysis White Paper (April 2 , 2019)
 https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
 
