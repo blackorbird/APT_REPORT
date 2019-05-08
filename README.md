@@ -5,6 +5,10 @@ Interesting apt report collection
 
 ### Group123
 
+▶Group123 Attempts to attack 'printing paper' APT disguised as a guide to organization and conferences
+https://blog.alyac.co.kr/2287
+(May 2 , 2019)
+
 ▶Group123, APT attack impersonating Unification Ministry, spread malicious code to Google Drive
 https://blog.alyac.co.kr/2268
 (April 22 , 2019)
