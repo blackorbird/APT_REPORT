@@ -5,6 +5,10 @@ Interesting apt report collection
 
 ### Group123
 
+▶ScarCruft continues to evolve, introduces Bluetooth harvester
+https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+(May 13, 2019)
+
 ▶Group123 Attempts to attack 'printing paper' APT disguised as a guide to organization and conferences
 https://blog.alyac.co.kr/2287
 (May 2 , 2019)
@@ -81,6 +85,9 @@ https://blog.alyac.co.kr/1640
 
 ▶ Analysis of "Smoke Screen" in APT campaign aimed at Korea and America (April 17 , 2019)
 https://blog.alyac.co.kr/2243
+
+▶ Encrypted APT attack, Kimsuky organization's 'smoke screen' PART 2 (May 13 , 2019)
+https://blog.alyac.co.kr/2299
 
 ▶ Kimsuky Organization, Operation Stealth Power Silence Operation (April 3 , 2019)
 https://blog.alyac.co.kr/2234
