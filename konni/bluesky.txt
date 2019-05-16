@@ -1,3 +1,5 @@
+author name "bluesky"
+
 9768b1208506e7f026625be173cdb2ee
 modif8.doc
 
