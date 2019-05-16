@@ -10,7 +10,7 @@ c0c007ce1a2d9fb8420c421d419f9f87
 20190429_13.doc
 
 2bfbf8ce47585aa86b1ab90ff109fd57
-0_2bfbf8ce47585aa86b1ab90ff109fd57
+젠트리온 지갑 관련자료.doc 
 
 0eb6090397c74327cd4d47819f724953
 요청주신 정책 관련 자료.doc
@@ -18,3 +18,29 @@ c0c007ce1a2d9fb8420c421d419f9f87
 c2 console 
 
 a2019 "AMADEY"
+
+<?
+    include( "cfg/config.php" );
+    session_start();
+    error_reporting( 0 ); 
+    if ( isset( $_POST["login"]) && isset( $_POST["password"] ) )
+    {
+       $login = $_POST["login"];
+       $password = $_POST["password"];
+       if ( ( $login == $conf["login"] ) && ( md5( $password ) == $conf["password"] ) )
+       {
+          $_SESSION["Name"] = "ROOT";
+          @header( "Refresh: 0; url = statistic.php" );
+       }
+       if ( ( $login == $conf["observer_login"] ) && ( md5( $password ) == $conf["observer_password"] ) )
+       {
+          $_SESSION["Name"] = "OBSERVER";
+          @header( "Refresh: 0; url = statistic.php" );
+       }
+    }
+    if ( $_GET['logout'] == 1 ) 
+    {
+       @session_destroy();
+       header( "Location: login.php" );
+       exit;
+    }
