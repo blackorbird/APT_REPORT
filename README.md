@@ -143,6 +143,11 @@ https://www.reuters.com/article/us-bayer-cyber/bayer-says-has-detected-contained
 
 https://www.tagesschau.de/inland/hackerangriff-bayer-101.html
 
+### Muddywater
+
+▶ Recent MuddyWater-associated BlackWater campaign shows signs of new anti-detection techniques(May 20,2019)
+
+https://blog.talosintelligence.com/2019/05/recent-muddywater-associated-blackwater.html
 
 # APT Group for finance
 
