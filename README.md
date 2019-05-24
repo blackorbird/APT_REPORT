@@ -112,6 +112,9 @@ https://blog.alyac.co.kr/2308
 
 ### Oceanlotus
 
+▶Analysis report on the attack on mobile devices by Oceanlotus (May 24, 2019)
+https://mp.weixin.qq.com/s/L-tCvLPOOMhP0ndgdqhkNQ
+
 ▶ Oceanlotus in the first quarter of 2019 for the attack technology of China.(April 24, 2019)
 https://mp.weixin.qq.com/s/xPsEXp2J5IE7wNSMEVC24A
 
