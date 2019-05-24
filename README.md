@@ -113,6 +113,7 @@ https://blog.alyac.co.kr/2308
 ### Oceanlotus
 
 ▶Analysis report on the attack on mobile devices by Oceanlotus (May 24, 2019)
+
 https://mp.weixin.qq.com/s/L-tCvLPOOMhP0ndgdqhkNQ
 
 ▶ Oceanlotus in the first quarter of 2019 for the attack technology of China.(April 24, 2019)
@@ -125,6 +126,7 @@ https://research.checkpoint.com/deobfuscating-apt32-flow-graphs-with-cutter-and-
 https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html
 
 ▶OceanLotus: macOS malware update(April 9 , 2019)
+
 https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/
 
 ### APT28
