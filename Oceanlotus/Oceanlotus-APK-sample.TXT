@@ -49,3 +49,24 @@ BF1CA2DAB5DF0546AACC02ABF40C2F19
 DF845B9CAE7C396CDE34C5D0C764360A
 C20FA2C10B8C8161AB8FA21A2ED6272D
 641F0CC057E2AB43F5444C5547E80976
+
+APk's name
+
+com.android.wps
+com.tornado.nextlauncher.theme.windows8pro
+Google Play services
+ChromeUpdate
+AdAway
+FlashUpdate
+
+
+Domain:
+http://ckoen.dmkatti.com
+https://jang.goongnam.com/resource/request.php
+mtk.baimind.com
+jang.goongnam.com
+
+
+APP market:
+http://download****.mediafire.com/sj*m*p**h1rg/so**lfeh*****rb/TOS_Multi_Backup_V1.1.apk
+http://ws.yingyonghui.com/4d*****a197ad8be*****d88d3c*****/5523a87c/apk/******/com.slhapp.khogameandroid.*************.apk
