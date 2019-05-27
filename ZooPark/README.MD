@@ -8,6 +8,8 @@ https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/05/241224
 
 Telegram group :https://t.me/Entekhab_10
 
+The Developer name:Apasec
+
 Android MD5
 
 0745b0957aab92b6a09645e076b4f339 
