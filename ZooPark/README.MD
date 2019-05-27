@@ -7,11 +7,11 @@ https://securelist.com/whos-who-in-the-zoo/85394/
 https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/05/24122414/ZooPark_for_public_final_edited.pdf
 
 
-Android MD5                         Windows MD5
-0745b0957aab92b6a09645e076b4f339    5b0431bbebdc48d2fa37882f7343b011
-1874aa71c9b13eec5b587e8ed6a71606    31edb7591bfeeb72e0652c17781640af
-191cc5d165472ae19e665821be71c282    58cc3935fbfdb2990304b99fbb919dad
-232bd3dde6914db0a3dbfc21ed178887    848193568a48f5742135667e9842890a
+Android MD5                         
+0745b0957aab92b6a09645e076b4f339    
+1874aa71c9b13eec5b587e8ed6a71606    
+191cc5d165472ae19e665821be71c282    
+232bd3dde6914db0a3dbfc21ed178887    
 2d91f7d1eb0d32ece0a8b1715a70b4cd    　
 345c2325dd633099f29b6d7141a4703d    
 451ff729eaa1cf26943a812cd37eb4ac    　
@@ -33,6 +33,13 @@ c7e4d75caa8e07847e47eadce229c288
 cb67abd070ae188390fc040cbe60e677    　
 e2f62b5acf3795a62e9d54e1301c4e7b    
 ec5a6f0e743f4b858aba9de96a33fb0c    　
+
+Windows MD5
+5b0431bbebdc48d2fa37882f7343b011
+31edb7591bfeeb72e0652c17781640af
+58cc3935fbfdb2990304b99fbb919dad
+848193568a48f5742135667e9842890a
+
 
 C&C
 rhubarb2.com
