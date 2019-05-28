@@ -81,6 +81,12 @@ https://blog.alyac.co.kr/1640
 
 ### kimsuky
 
+▶Kimsuky, cyber security bureau Cryptographic Cases (May 28 , 2019)
+https://blog.alyac.co.kr/2338
+
+▶Kimsuky, Korea Cryptographic Exchange Event Impersonation APT Attack (May 28 , 2019)
+https://blog.alyac.co.kr/2336
+
 ▶Kimsuky  'Fake striker' APT campaign aimed at Korea (May 20 , 2019)
 https://blog.alyac.co.kr/2315
 
