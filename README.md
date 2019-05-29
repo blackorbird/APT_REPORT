@@ -139,6 +139,9 @@ https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/
 ▶ CB TAU Threat Intelligence Notification: Hunting APT28 Downloaders  (April 5 , 2019)
 https://www.carbonblack.com/2019/04/05/cb-threat-intelligence-notification-hunting-apt28-downloaders/
 
+### Turla
+▶ A dive into Turla PowerShell usage (May 29 , 2019)
+https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
 
 ### tick
 
