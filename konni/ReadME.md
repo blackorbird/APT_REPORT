@@ -14,7 +14,15 @@ KONNI: A Malware Under The Radar For Years
 
 https://blog.talosintelligence.com/2017/05/konni-malware-under-radar-for-years.html
 
+## relate to syscon and darkhotel
+
 https://s.tencent.com/research/report/552.html
+
+## relate to syscon
+
+McAfee Uncovers Operation Honeybee, a Malicious Document Campaign Targeting Humanitarian Aid Groups
+
+https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/mcafee-uncovers-operation-honeybee-malicious-document-campaign-targeting-humanitarian-aid-groups/
 
 ## relate to group123
 
