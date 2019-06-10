@@ -120,6 +120,9 @@ https://blog.alyac.co.kr/2347
 ▶Korean Kusa Konni Organization, Blue Sky Utilizing 'Amadey' Russia Botnet  (May 16, 2019)
 https://blog.alyac.co.kr/2308
 
+▶The Konni APT Campaign and 'Operation Hunter Adonis' (Jan 1 ,2019)
+https://blog.alyac.co.kr/2061
+
 ### Oceanlotus
 
 ▶Analysis report on the attack on mobile devices by Oceanlotus (May 24, 2019)
