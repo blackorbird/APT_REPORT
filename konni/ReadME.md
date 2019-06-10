@@ -41,6 +41,12 @@ Korean Kusa Konni Organization, Blue Sky Utilizing 'Amadey' Russia Botnet
 
 https://blog.alyac.co.kr/2308
 
+## relate to babyface rat
+
+The Konni APT Campaign and 'Operation Hunter Adonis' 
+
+https://blog.alyac.co.kr/2061
+
 
 ## relate to Nokki
 
