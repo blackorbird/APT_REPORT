@@ -22,6 +22,18 @@ ScarCruft continues to evolve, introduces Bluetooth harvester
 
 https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
 
+## relate to Carrotbat
+
+The Fractured Block Campaign: CARROTBAT Used to Deliver Malware Targeting Southeast Asia
+
+https://unit42.paloaltonetworks.com/unit42-the-fractured-block-campaign-carrotbat-malware-used-to-deliver-malware-targeting-southeast-asia/
+
+## relate to Amadey
+Korean Kusa Konni Organization, Blue Sky Utilizing 'Amadey' Russia Botnet 
+
+https://blog.alyac.co.kr/2308
+
+
 ## relate to Nokki
 
 New KONNI Malware attacking Eurasia and Southeast Asia
