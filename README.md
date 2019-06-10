@@ -113,6 +113,10 @@ https://www.sentinelone.com/blog/lazarus-apt-targets-mac-users-poisoned-word-doc
 
 
 ### Konni
+
+▶APT Campaign 'Konni' & 'Kimsuky' find commonality in organizations (June 10, 2019)
+https://blog.alyac.co.kr/2347
+
 ▶Korean Kusa Konni Organization, Blue Sky Utilizing 'Amadey' Russia Botnet  (May 16, 2019)
 https://blog.alyac.co.kr/2308
 
