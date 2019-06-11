@@ -2,8 +2,10 @@
 
 ### member
 
+Muddywaters: how MuddyWater hackers attacked a Turkish military electronics manufacturer
 https://habr.com/ru/company/group-ib/blog/452540/
 
+MUDDYWATER CYBER SPY
 https://0xffff0800.blogspot.com/2019/06/a-muddywater-cyber-spy.html
 
 ### attack
