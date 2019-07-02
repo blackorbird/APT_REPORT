@@ -125,6 +125,9 @@ https://blog.alyac.co.kr/2061
 
 ### Oceanlotus
 
+▶Threat Spotlight: Ratsnif - New Network Vermin from OceanLotus (July 1, 2019)
+https://threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+
 ▶Analysis report on the attack on mobile devices by Oceanlotus (May 24, 2019)
 
 https://mp.weixin.qq.com/s/L-tCvLPOOMhP0ndgdqhkNQ
