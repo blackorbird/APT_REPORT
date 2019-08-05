@@ -1,4 +1,4 @@
-# WpBot
+# WpBot hack group
 
 ## DOWNLOAD URL
 
