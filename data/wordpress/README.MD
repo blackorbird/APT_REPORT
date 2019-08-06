@@ -1,5 +1,9 @@
 # WpBot hack group
 
+## hacker name 
+
+luqman1337
+
 ## DOWNLOAD URL
 
 http://formfactset.org:8082/static/backdoorGood.txt
@@ -42,3 +46,15 @@ http://boutique.liberal.ca/wp-content/uploads/2019/06/8puk0P
 https://www.georgevaults.com/wp-content/uploads/2019/05/WOtgUS
 
 http://www.skoda-bohemiamotors.pl/wp-content/uploads/2019/05/bunIjd
+
+## PHP
+
+pastebin.com/PuT9UvUS
+pastebin.com/sTmYZ8wK
+pastebin.com/6yK2y2Qm
+pastebin.com/3uHxyFAZ
+pastebin.com/fgwNrs5e
+pastebin.com/zRj9ETT9
+pastebin.com/fbHtDWxe
+pastebin.com/cugKiQ7h
+pastebin.com/JFtCDEJE
