@@ -1,8 +1,8 @@
 # WpBot hack group
 
-## hacker name 
+## php webshell name 
 
-luqman1337
+Luqman1337 Mini shell
 
 ## DOWNLOAD URL
 
