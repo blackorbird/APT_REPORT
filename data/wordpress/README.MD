@@ -8,6 +8,9 @@ luqman1337
 
 http://formfactset.org:8082/static/backdoorGood.txt
 
+Botnet will connect formfactset.org:8081
+
+
 ## LIST
 
 cce014c7dcac3919499de460ba5b17a6
