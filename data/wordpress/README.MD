@@ -13,9 +13,12 @@ Botnet will connect formfactset.org:8081
 
 ## LIST
 
-cce014c7dcac3919499de460ba5b17a6
+cce014c7dcac3919499de460ba5b17a6   one.txt has 55000 website list
 
 af462134cd6828aca1ac1eb0fed068ac
+
+
+
 
 ## BOTNET MALWARE
 
