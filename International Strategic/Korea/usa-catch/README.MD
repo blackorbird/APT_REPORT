@@ -1,5 +1,7 @@
 https://www.virustotal.com/en/user/CYBERCOM_Malware_Alert/
 
+zip password : infected
+
 2a791769aa73ac757f210f8546125b57
 
 2ff1688fe866ec2871169197f9d46936
