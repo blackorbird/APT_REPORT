@@ -7,6 +7,9 @@ APT Campaign 'Konni' & 'Kimsuky' find commonality in organizations
 
 https://blog.alyac.co.kr/2347
 
+Operation Moneyholic With HWP Document 
+https://asec.ahnlab.com/1251
+
 
 ## relate to darkhotel
 
