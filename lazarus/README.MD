@@ -3,6 +3,7 @@
 related
 https://twitter.com/cyberwar_15/status/1175940165425958912
 
+sample password：infected
 #Lazarus #Powershell
 92.222.106[.]229
 158.69.57[.]135
