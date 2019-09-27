@@ -114,6 +114,9 @@ https://www.sentinelone.com/blog/lazarus-apt-targets-mac-users-poisoned-word-doc
 
 ### Konni
 
+▶Konni's APT Group conducts attacks with Russian-North Korean trade and economic investment documents
+https://blog.alyac.co.kr/2535
+
 ▶APT Campaign 'Konni' & 'Kimsuky' find commonality in organizations (June 10, 2019)
 https://blog.alyac.co.kr/2347
 
