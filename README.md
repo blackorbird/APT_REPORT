@@ -81,6 +81,9 @@ https://blog.alyac.co.kr/1640
 
 ### kimsuky
 
+▶Kimsuky, Blue House Green Support / Sangchunjae Estimate
+https://blog.alyac.co.kr/2645
+
 ▶Kimsuky, cyber security bureau Cryptographic Cases (May 28 , 2019)
 https://blog.alyac.co.kr/2338
 
@@ -108,6 +111,10 @@ https://blog.alyac.co.kr/2209
 https://research.checkpoint.com/silivaccine-a-look-inside-north-koreas-anti-virus/
 
 ### Lazarus
+
+▶Lazarus Group Goes 'Fileless'，an implant w/ remote download & in-memory execution
+https://objective-see.com/blog/blog_0x51.html
+
 ▶LAZARUS APT TARGETS MAC USERS WITH POISONED WORD DOCUMENT
 https://www.sentinelone.com/blog/lazarus-apt-targets-mac-users-poisoned-word-document/
 
