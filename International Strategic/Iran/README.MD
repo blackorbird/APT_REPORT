@@ -48,6 +48,8 @@ https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-e
 
 https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
 
+https://www.brighttalk.com/webcast/10703/296317/apt34-new-targeted-attack-in-the-middle-east
+
 
 ## Magic Hound (AKA APT35/Newscaster/Cobalt Gypsy)
 
@@ -70,6 +72,8 @@ References
 https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html
 
 https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/
+
+https://www.brighttalk.com/webcast/10703/275683?utm_source=FireEye&utm_medium=pressrelease
 
 ## DarkHydrus
 
