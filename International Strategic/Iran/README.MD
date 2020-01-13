@@ -14,6 +14,13 @@ OilRig is a threat group Unit 42 named and discovered in May 2016. Since then, w
 Once gaining access to an end point, actors would use credential dumping tools, such as Mimikatz to gather credentials to legitimate accounts to then move laterally to other systems on the network. When presented with a webserver, OilRig would install a webshell as another ingress point to maintain access to the network.
 
 References
+
+https://www.clearskysec.com/powdesk-apt34/
+
+https://blog.knowbe4.com/iranian-hacker-group-apt34-use-new-tonedeaf-malware-over-linkedin-in-latest-phishing-campaign
+
+https://cyware.com/blog/apt34-the-helix-kitten-cybercriminal-group-loves-to-meow-middle-eastern-and-international-organizations-48ae
+
 https://unit42.paloaltonetworks.com/behind-the-scenes-with-oilrig/
 
 https://unit42.paloaltonetworks.com/dns-tunneling-in-the-wild-overview-of-oilrigs-dns-tunneling/
