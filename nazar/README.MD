@@ -5,4 +5,3 @@ https://www.epicturla.com/blog/the-lost-nazar
 
 https://blog.malwarelab.pl/posts/nazar_eyservice/
 
-https://securelist.com/naikons-aria/96899/
