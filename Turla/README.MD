@@ -1,0 +1,14 @@
+related:
+
+https://www.leonardocompany.com/en/news-and-stories-detail/-/detail/knowledge-the-basis-of-protection
+
+ioc
+ad6731c123c4806f91e1327f35194722
+b4587870ecf51e8ef67d98bb83bc4be7
+7533ef5300263eec3a677b3f0636ae73
+0994d9deb50352e76b0322f48ee576c6
+14ecd5e6fc8e501037b54ca263896a11
+19fbd8cbfb12482e8020a887d6427315
+edf900cebb70c6d1fcab0234062bfc28
+ea06b213d5924de65407e8931b1e4326
+e079ec947d3d4dacb21e993b760a65dc
