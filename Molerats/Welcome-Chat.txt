@@ -1,0 +1,18 @@
+ref
+https://www.welivesecurity.com/2020/07/14/welcome-chat-secure-messaging-app-nothing-further-truth/
+
+Functionality	Source	Age (years)
+Call recording	open source, GitHub	8
+https://github.com/hunterli/callrec/tree/master/src/com/cn6000/callrec
+
+SMS stealing	open source, GitHub	6
+https://github.com/tuenti/SmsRadar/tree/master/library/src/main/java/com/tuenti/smsradar
+
+Google Maps coordinates	open source, Blogspot (plus other sources)	5
+https://msql-php.blogspot.com/2015/11/google-map-v3-get-city-state-zipcode.html
+
+GEO tracking	open source, GitHub	8
+https://github.com/Artsu/GeoTrack/tree/master/src/fi/jyu/ties425/geotrack/util
+
+GPS tracking	open source, GitHub	5
+https://gist.github.com/ertugrulozcan/70973144b1c582618a6c
