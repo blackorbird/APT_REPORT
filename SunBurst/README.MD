@@ -1,5 +1,7 @@
 # reference
 
+https://community.riskiq.com/article/9a515637/description
+
 https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
 
 https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
