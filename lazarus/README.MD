@@ -1,3 +1,10 @@
+Summary Report
+
+2021.4
+
+https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/lazarus-recruitment/
+
+
 2019.09.24
 
 Dtrack RAT
