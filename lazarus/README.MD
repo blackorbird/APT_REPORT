@@ -4,6 +4,21 @@ Summary Report
 
 https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/lazarus-recruitment/
 
+2021.Security Researcher
+
+https://blog.google/threat-analysis-group/update-campaign-targeting-security-researchers/
+
+https://enki.co.kr/blog/2021/02/04/ie_0day.html
+
+https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
+
+https://medium.com/s2wlab/analysis-of-threatneedle-c-c-communication-feat-google-tag-warning-to-researchers-782aa51cf74
+
+https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/
+
+https://mp.weixin.qq.com/s/W-C_tKVnXco8C3ctgAjoNQ
+
+https://mp.weixin.qq.com/s/UBD0hyXUooYuDrpsz8-MtQ
 
 2019.09.24
 
