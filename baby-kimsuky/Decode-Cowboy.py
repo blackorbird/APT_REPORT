@@ -1,6 +1,6 @@
 import base64
 
-with open(‘cowboy’, ‘r’) as file_in, open(‘cowboy_clear.bin’, ‘wb’) as file_out:
+with open('cowboy', 'r') as file_in, open('cowboy_clear.bin', 'wb') as file_out:
 
     EncStr = file_in.read()
 
