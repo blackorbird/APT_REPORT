@@ -1,5 +1,13 @@
 Summary Report
 
+2021.11
+
+https://twitter.com/ESETresearch/status/1458438155149922312
+
+A8EF73CC67C794D5AA860538D66898868EE0BEC0 
+
+DE0E23DB04A7A780A640C656293336F80040F387 
+
 2021.4
 
 https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/lazarus-recruitment/
