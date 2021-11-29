@@ -1,5 +1,11 @@
 # Group123
 
+## 20211129
+
+ScarCruft surveilling North Korean defectors and human rights activists
+
+https://securelist.com/scarcruft-surveilling-north-korean-defectors-and-human-rights-activists/105074/
+
 ## 20191111
 
 Group123，North Korean defector sponsor 'Dragon Messenger' mobile APT attack
