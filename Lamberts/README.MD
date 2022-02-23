@@ -16,3 +16,6 @@ https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicio
 lambert sample
 
 password:infected
+
+
+https://twitter.com/_CPResearch_/status/1484502090068242433
