@@ -17,3 +17,7 @@ https://github.com/x0rz/EQGRP/
 NSA ANT catalog – Wikipedia
 
 https://en.wikipedia.org/wiki/NSA_ANT_catalo
+
+The Bvp47 - a Top-tier Backdoor of US NSA Equation Group
+
+https://www.pangulab.cn/en/post/the_bvp47_a_top-tier_backdoor_of_us_nsa_equation_group/
