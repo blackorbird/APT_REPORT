@@ -27,7 +27,7 @@ The hwp last all saved by "jeff"
 
 # 2019-04-19
 
-Test sample from korea
+Test sample from north korea
 
 ed76158adaa1e5d534320409015597de
 a3c0d3351f1ca27c1ba11de9762448a6
