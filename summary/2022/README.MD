@@ -1,5 +1,9 @@
 threat summary report
 
+ddos q2
+
+https://gcorelabs.com/blog/ddos-attack-trends-in-q1q2-of-2022/
+
 Spam and phishing in 2021
 
 https://securelist.com/spam-and-phishing-in-2021/105713/
