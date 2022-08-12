@@ -53,3 +53,8 @@ e20473bea7fe5968f0a032303838b601
 d9a39c41e9f599766b5527986e807840
 
 b06e2f95ecf7012138bee314be9baed9
+
+add lnk
+
+https://blog.cyble.com/2022/08/09/bitter-apt-group-using-dracarys-android-spyware/
+
