@@ -10,3 +10,7 @@ https://blog.en.elevenpaths.com/2019/04/new-research-docless-vietnam-apt.html
 
 https://www.zscaler.com/blogs/security-research/new-php-variant-ducktail-infostealer-targeting-facebook-business-accounts
 
+9todesigns[.]com  
+chawood[.]com  
+djderov[.]com  
+emisfer[.]com  
