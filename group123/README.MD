@@ -1,5 +1,17 @@
 # Group123
 
+## 20221208
+
+Internet Explorer 0-day exploited by North Korean actor APT37
+
+https://blog.google/threat-analysis-group/internet-explorer-0-day-exploited-by-north-korean-actor-apt37/
+
+word-template[.]net
+openxmlformat[.]org
+ms-office[.]services
+ms-offices[.]com
+template-openxml[.]com
+
 ## 20211129
 
 ScarCruft surveilling North Korean defectors and human rights activists
