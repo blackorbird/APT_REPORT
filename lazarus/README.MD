@@ -1,5 +1,12 @@
 Summary Report
 
+2022.12
+
+BlueNoroff introduces new methods bypassing MoTW
+
+https://securelist.com/bluenoroff-methods-bypass-motw/108383/
+
+
 2021.11
 
 https://twitter.com/ESETresearch/status/1458438155149922312
