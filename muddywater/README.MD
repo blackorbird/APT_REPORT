@@ -18,3 +18,7 @@ https://mp.weixin.qq.com/s/a_LB0e4FiLFra54upu7X-Q
 
 Iranian APT group ‘MuddyWater’ Adds Exploits to Their Arsenal
 https://www.clearskysec.com/muddywater2/
+
+### new operation
+
+https://socradar.io/dark-web-profile-muddywater-apt-group/
