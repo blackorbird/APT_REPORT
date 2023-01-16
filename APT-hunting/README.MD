@@ -1,4 +1,4 @@
-Nice Hunter reports:
+Nice Hunting reports:
 
 Automating Malware Analysis Operations (MAOps)
 
