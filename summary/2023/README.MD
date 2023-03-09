@@ -17,3 +17,7 @@ https://book.yunzhan365.com/tkgd/ftku/mobile/index.html
 Crypto Money Laundering: Four Exchange Deposit Addresses Received Over $1 Billion in Illicit Funds in 2022
 
 https://blog.chainalysis.com/reports/crypto-money-laundering-2022/
+
+2022 Year in Review
+
+https://thedfirreport.com/2023/03/06/2022-year-in-review/
