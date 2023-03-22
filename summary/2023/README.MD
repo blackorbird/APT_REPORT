@@ -1,5 +1,9 @@
 Happy New year
 
+## Exploit
+
+https://www.mandiant.com/resources/blog/zero-days-exploited-2022
+
 ## predictions:
 
 https://securelist.com/advanced-threat-predictions-for-2023/107939/
