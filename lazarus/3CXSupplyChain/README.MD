@@ -1,6 +1,9 @@
 
 ## 3CX Supply Chain
 
+Kaspersky 
+https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
+
 Volexity
 https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/
 
