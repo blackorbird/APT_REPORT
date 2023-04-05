@@ -1,3 +1,7 @@
+Meet the FSB contractor: 0Day Technologies
+
+https://clement-briens.com/2023/04/01/meet-the-fsb-contractor-0day-technologies/
+
 Russia’s Cyber Operations Groups
 
 https://xorl.wordpress.com/2021/04/16/russias-cyber-operations-groups/
