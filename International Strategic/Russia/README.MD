@@ -1,3 +1,7 @@
+Hacked: Russian GRU officer wanted by the FBI, leader of the hacker group APT 28
+
+https://informnapalm.org/en/hacked-russian-gru-officer/
+
 Meet the FSB contractor: 0Day Technologies
 
 https://clement-briens.com/2023/04/01/meet-the-fsb-contractor-0day-technologies/
