@@ -4,6 +4,9 @@
 ESET
 https://www.welivesecurity.com/2023/04/20/linux-malware-strengthens-links-lazarus-3cx-supply-chain-attack/
 
+krebsonsecurity
+https://krebsonsecurity.com/2023/04/3cx-breach-was-a-double-supply-chain-compromise/
+
 Kaspersky 
 https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
 
