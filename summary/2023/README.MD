@@ -26,6 +26,38 @@ https://blog.chainalysis.com/reports/crypto-money-laundering-2022/
 
 https://thedfirreport.com/2023/03/06/2022-year-in-review/
 
+20230511 update lnk
+
+[1] https://www.eset.com/int/business/services/threat-intelligence/
+[2] https://www.welivesecurity.com/2023/03/02/mqsttang-mustang-panda-latest-backdoor-treadsnew-ground-qt-mqtt/
+[3] https://unit42.paloaltonetworks.com/playful-taurus/
+[4] https://securelist.com/a-targeted-attack-against-the-syrian-ministry-of-foreign-affairs/34742/
+[5] https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+[6] https://www.crowdstrike.com/blog/new-supply-chain-attack-leverages-comm100-chat-installer/
+[7] https://github.com/GetRektBoy724/SharpUnhooker
+[8] https://blogs.blackberry.com/en/2023/02/newspenguin-a-previously-unknown-threat-actortargets-pakistan-with-advanced-espionage-tool
+[9] https://the.earth.li/~sgtatham/putty/0.78/htmldoc/Chapter7.html#plink
+[10] https://asec.ahnlab.com/en/49089/
+[11] https://www.nirsoft.net/utils/web_browser_password.html
+[12] https://www.nirsoft.net/utils/network_password_recovery.html
+[13] https://docs.devexpress.com/WindowsForms/15216/controls-and-libraries/pdf-viewer
+[14] https://www.justice.gov/usao-edny/pr/founder-and-majority-owner-bitzlato-cryptocurrencyexchange-charged-unlicensed-money
+[15] https://www.welivesecurity.com/2023/04/20/linux-malware-strengthens-links-lazarus-3cxsupply-chain-attack/
+[16] https://telegra.ph/
+[17] https://twitter.com/ESETresearch/status/1618960022150729728
+[18] https://cert.gov.ua/article/3718487
+[19] https://cert.gov.ua/article/341128
+[20] https://www.malwarebytes.com/blog/threat-intelligence/2022/06/russias-apt28-uses-fear-ofnuclear-war-to-spread-follina-docs-in-ukrain
+[21] https://attack.mitre.org/techniques/T1027/006/
+[22] https://www.notion.so/
+[23] https://www.welivesecurity.com/wp-content/uploads/2023/01/eset_apt_activity_report_t32022.
+pdf
+[24] https://blog.talosintelligence.com/yorotrooper-espionage-campaign-cis-turkey-europe/
+[25] https://www.domaintools.com/resources/blog/winter-vivern-a-look-at-re-crafted-governmentmaldocs/
+[26] https://scpc.gov.ua/api/docs/4eeb6a10-b7aa-4396-8b04-e0e4b7fca1lj/4eeb6a10-b7aa-4396-
+8b04-e0e4b7fca1lj.pdf
+[27] https://nvd.nist.gov/vuln/detail/CVE-2022-27926
+
 other 2022 link:  
 1.https://ti.qianxin.com/blog/articles/SideCopy's-Golang-based-Linux-tool/  
 2.https://mp.weixin.qq.com/s/xKKr5UV26npohwvyv79U0w  
