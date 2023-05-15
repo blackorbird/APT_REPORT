@@ -1,5 +1,11 @@
 Summary Report
 
+2023.5.12
+
+Attack Trends Related to DangerousPassword
+
+https://blogs.jpcert.or.jp/en/2023/05/dangerouspassword.html
+
 2022.12
 
 BlueNoroff introduces new methods bypassing MoTW
