@@ -10,6 +10,11 @@ https://securelist.com/advanced-threat-predictions-for-2023/107939/
 
 ## summary:
 
+THE CYBERTHREAT REPORT June 2023
+Insights Gleaned from a Global Network of Experts, Sensors, Telemetry, and Intelligence
+
+https://www.trellix.com/en-us/advanced-research-center/threat-reports/jun-2023.html
+
 The State of Ransomware in the US: Report and Statistics 2022
 
 https://www.emsisoft.com/en/blog/43258/the-state-of-ransomware-in-the-us-report-and-statistics-2022/
