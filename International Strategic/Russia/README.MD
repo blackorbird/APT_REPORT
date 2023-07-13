@@ -1,3 +1,7 @@
+The GRU's Disruptive Playbook
+
+https://www.mandiant.com/resources/blog/gru-disruptive-playbook
+
 Hacked: Russian GRU officer wanted by the FBI, leader of the hacker group APT 28
 
 https://informnapalm.org/en/hacked-russian-gru-officer/
