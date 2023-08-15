@@ -1,5 +1,11 @@
 Summary Report
 
+2023.8.15
+
+Lazarus Group Launches First Open Source Supply Chain Attacks Targeting Crypto Sector.
+
+https://twitter.com/blackorbird/status/1691345881310928896
+
 2023.5.12
 
 Attack Trends Related to DangerousPassword
