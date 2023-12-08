@@ -6,3 +6,7 @@ https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/blue-ca
 
 https://www.recordedfuture.com/exposing-tag-53-credential-harvesting-infrastructure-for-russia-aligned-espionage-operations
 
+The UK National Cyber Security Centre (NCSC), the US Cybersecurity and Infrastructure Security Agency (CISA), the US Federal Bureau of Investigation (FBI), the US National Security Agency (NSA), the US Cyber National Mission Force (CNMF), the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC), the Canadian Centre for Cyber Security (CCCS), and the New Zealand National Cyber Security Centre (NCSC-NZ) assess that Star Blizzard is almost certainly subordinate to the Russian Federal Security Service (FSB) Centre 18.
+
+https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-341a
+
