@@ -1,5 +1,13 @@
 ### RELATED REPORT
 
+2024.2
+
+Doppelgänger | Russia-Aligned Influence Operation Targets Germany 
+
+https://www.sentinelone.com/labs/doppelganger-russia-aligned-influence-operation-targets-germany/
+
+About APT28
+
 [1] https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-full.pdf
 
 [2] https://www.welivesecurity.com/2017/05/09/sednit-adds-two-zero-day-exploits-using-trumps-attack-syria-decoy/
