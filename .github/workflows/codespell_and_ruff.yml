@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: pip install --user codespell[toml] ruff
-    - run: codespell --skip="*.pdf" || true  # --ignore-words-list=""
-    - run: ruff check --output-format=github --select=E9  # Look for unparsable files and syntax errors
+    - run: codespell --ignore-words-list="ans,donot" --skip="./data/*,*.csv,*.pdf,*.txt,*.yara" || true 
+    - run: ruff check --output-format=github --select=E9  # Look for Python syntax errors
