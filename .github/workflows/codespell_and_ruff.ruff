@@ -1,0 +1,19 @@
+# This Action uses minimal steps to run in ~5 seconds to rapidly:
+# look for typos in the codebase using codespell, and
+# lint Python code using ruff and provide intuitive GitHub Annotations to contributors.
+# https://github.com/codespell-project/codespell#readme
+# https://docs.astral.sh/ruff/
+name: codespell_and_ruff
+on:
+  push:
+    # branches: [main, master]
+  pull_request:
+    # branches: [main, master]
+jobs:
+  codespell_and_ruff:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: pip install --user codespell[toml] ruff
+    - run: codespell --skip="*.pdf" || true  # --ignore-words-list=""
+    - run: ruff check --output-format=github --select=E9  # Look for unparsable files and syntax errors
