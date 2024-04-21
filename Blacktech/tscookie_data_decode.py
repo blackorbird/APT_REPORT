@@ -105,7 +105,7 @@ def main():
     dec_data = decode_data(data, args.file + ".decode")
 
     dll_index = dec_data.find(MZ_HEADER)
-    if dll_index:
+    if dll_index != -1:
         dll_data = dec_data[dll_index:]
         dll = pefile.PE(data=dll_data)
         print("[*] Found main DLL : 0x{0:X}".format(dll_index))
