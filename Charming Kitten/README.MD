@@ -1,4 +1,8 @@
-Charming Kitten/Phosphorous/APT35
+Charming Kitten/Phosphorous/APT35/APT42
+
+Uncharmed: Untangling Iran's APT42 Operations
+
+https://cloud.google.com/blog/topics/threat-intelligence/untangling-iran-apt42-operations/
 
 https://www.clearskysec.com/the-kittens-are-back-in-town/
 
