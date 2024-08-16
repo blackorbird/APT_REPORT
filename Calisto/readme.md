@@ -1,5 +1,14 @@
 BlueCharlie/Blue Callisto/Callisto/Calisto/COLDRIVER/Star Blizzard/SEABORGIUM/TA446/TAG-53
 
+2024.8
+
+Rivers of Phish
+Sophisticated Phishing Targets Russia’s Perceived Enemies Around the Globe
+
+https://citizenlab.ca/2024/08/sophisticated-phishing-targets-russias-perceived-enemies-around-the-globe/
+
+https://www.accessnow.org/russian-phishing-campaigns/
+
 https://blog.sekoia.io/calisto-show-interests-into-entities-involved-in-ukraine-war-support/
 
 https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/blue-callisto-orbits-around-us.html
