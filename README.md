@@ -1,4 +1,4 @@
-# APT_REPORT collected by @blackorbird https://twitter.com/blackorbird 
+# APT_REPORT collected by @blackorbird  https://x.com/blackorbird
 Interesting apt report & sample & malware & technology & intellegence collection
 
 # APT Group for country
