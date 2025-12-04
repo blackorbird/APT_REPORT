@@ -2,6 +2,10 @@
 
 https://cloud.google.com/blog/topics/threat-intelligence/intellexa-zero-day-exploits-continue
 
+https://www.recordedfuture.com/research/intellexas-global-corporate-web
+
+https://securitylab.amnesty.org/latest/2025/12/intellexa-leaks-predator-spyware-operations-exposed/
+
 
 https://eic.network/projects/predator-files.html
 
