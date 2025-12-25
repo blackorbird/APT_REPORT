@@ -1,3 +1,5 @@
+https://medium.com/@anyrun/smile-youre-on-camera-a-live-stream-from-inside-lazarus-group-s-it-workers-scheme-fdc952c02bbf
+
 https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat
 
 https://edition.cnn.com/2024/08/08/politics/north-korea-fraud-tennessee-man-arrested/index.html
