@@ -1,5 +1,11 @@
 ## report Pegasus 
 
+2026
+
+https://github.com/AmnestyTech/inside-pegasus/tree/main
+
+https://securitylab.amnesty.org/latest/2026/07/inside-pegasus-the-evolution-of-the-worlds-most-notorious-spyware/
+
 2024
 
 https://citizenlab.ca/2023/04/nso-groups-pegasus-spyware-returns-in-2022/
