@@ -118,6 +118,10 @@ https://research.checkpoint.com/silivaccine-a-look-inside-north-koreas-anti-viru
 
 ### Lazarus
 
+▶[BlueNoroff] Fake video-call ClickFix kit: August 2026 infrastructure and one observed delivery chain
+https://github.com/farbodghasemlu/bluenoroff-fake-meeting-kit
+(September 1, 2026)
+
 ▶Lazarus Group Goes 'Fileless'，an implant w/ remote download & in-memory execution
 https://objective-see.com/blog/blog_0x51.html
 
